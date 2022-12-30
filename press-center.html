@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>МАХАЧКАЛА - Международный аэропорт</title>
+	<meta property="og:title" content="МАХАЧКАЛА - Международный аэропорт">
+	<meta property="og:description" content="Short description">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="МАХАЧКАЛА - Международный аэропорт">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container container--lg">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<picture>
+							<source srcset="img/logotype.svg" media="(min-width: 768px)">
+							<img src="img/logotype-mobile.svg" alt="МАХАЧКАЛА - Международный аэропорт">
+						</picture>
+					</a>
+					<div class="header__inner">
+						<nav class="nav header__nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#" class="nav__link">Табло рейсов</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Авиакомпании</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Пресс центр</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Об аэропорте</a>
+								</li>
+							</ul>
+						</nav>
+						<label for="switch-status" class="switch switch--no-checked header__switch">
+							<input type="checkbox" id="switch-status" class="switch__input">
+							<div class="switch__group">
+								<span class="switch__title switch__title--left">Пассажирам</span>
+								<span class="switch__icon"></span>
+								<span class="switch__title switch__title--right">Партнерам</span>
+							</div>
+						</label>
+						<a href="#" class="c-location header__location">
+							<svg class="c-location__icon">
+								<use xlink:href="img/sprite.svg#icon-location"></use>
+							</svg>
+							<span>Как добраться</span>
+						</a>
+						<button class="c-language header__language">
+							<span class="c-language__value c-language__value--active">RU</span>
+							<span class="c-language__value">EN</span>
+						</button>
+						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<svg class="hamburger__icon">
+								<use xlink:href="img/sprite.svg#icon-hamburger"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- menu -->
+		<div class="menu" id="menu">
+			<div class="menu__top">
+				<a href="#" class="menu__logotype">
+					<img src="img/logotype-mobile.svg" alt="МАХАЧКАЛА - Международный аэропорт">
+				</a>
+				<div class="menu__group menu__group--desktop">
+					<a href="tel:+78722555500" class="menu__phone">+7 (8722) 55-55-00</a>
+					<span class="menu__help">Справочная служба аэропорта</span>
+				</div>
+				<div class="menu__group menu__group--flex">
+					<a href="#" class="c-visually-impaired menu__visually-impaired menu__visually-impaired--desktop">
+						<svg class="c-visually-impaired__icon">
+							<use xlink:href="img/sprite.svg#icon-location"></use>
+						</svg>
+						<span>Версия для слабовидящих</span>
+					</a>
+					<a href="#" class="c-location menu__location">
+						<svg class="c-location__icon">
+							<use xlink:href="img/sprite.svg#icon-location"></use>
+						</svg>
+						<span>Как добраться</span>
+					</a>
+					<button class="menu__close-btn menu__close">
+						<svg class="menu__close-icon">
+							<use xlink:href="img/sprite.svg#icon-close-square"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="menu__main">
+				<div class="menu__wrapper">
+					<div class="c-accordeon services__wrapper">
+						<div class="c-accordeon__item">
+							<button class="c-accordeon__trigger">Пассажирам</button>
+							<div class="c-accordeon__wrapper">
+								<nav class="menu-nav">
+									<ul class="menu-nav__list">
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Рейсы и авиакомпании</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Транспорт</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Схема аэропорта</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Регистрация на рейс</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Контроль и досмотр</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Багаж</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Пассажирам с детьми</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">VIP обслуживание</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Медицинаская помощь</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Сервисы в аэропорту</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Пассажирам с ограниченными возможностями</a>
+										</li>
+									</ul>
+									<ul class="menu-nav__submenu">
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__sublink">Заказать такси</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__sublink">Автопрокат</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="c-accordeon__item">
+							<button class="c-accordeon__trigger">Партнерам</button>
+							<div class="c-accordeon__wrapper">
+								<nav class="menu-nav">
+									<ul class="menu-nav__list">
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Авиакомпаниям</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Аренда в аэропорту</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Реклама в эропорту</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Закупки</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Реквизиты компании</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link">Почтово-грузовой склад</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="c-accordeon__item">
+							<button class="c-accordeon__trigger">Пресс центр</button>
+							<div class="c-accordeon__wrapper">
+								<nav class="menu-nav"></nav>
+							</div>
+						</div>
+						<div class="c-accordeon__item">
+							<button class="c-accordeon__trigger">Об аэропорте</button>
+							<div class="c-accordeon__wrapper">
+								<nav class="menu-nav"></nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu__wrapper">
+					<div class="menu__block menu__block--mobile">
+						<a href="tel:+78722555500" class="menu__phone">+7 (8722) 55-55-00</a>
+						<span class="menu__help">Справочная служба аэропорта</span>
+					</div>
+					<div class="menu__block">
+						<p class="menu__copyright">© 2022 Международный Аэропорт«Махачкала»</p>
+						<a href="#" class="c-visually-impaired menu__visually-impaired menu__visually-impaired--mobile">
+							<svg class="c-visually-impaired__icon">
+								<use xlink:href="img/sprite.svg#icon-location"></use>
+							</svg>
+							<span>Версия для слабовидящих</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-overlay" id="menu-overlay"></div>
+		<!-- end of menu -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- main search -->
+			<div class="main-search">
+				<div class="container">
+					<form action="#" class="main-search__controls">
+						<svg class="main-search__icon">
+							<use xlink:href="img/sprite.svg#icon-search"></use>
+						</svg>
+						<input type="text" class="main-search__input" placeholder="Поиск рейса по номеру, городу или названию авиакомпании">
+						<button class="main-search__btn">
+							<svg class="main-search__btn-icon">
+								<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+			<!-- end of main search -->
+			<!-- breadcrumb -->
+			<div class="breadcrumb" aria-label="Breadcrumb">
+				<div class="container">
+					<nav class="breadcrumb__nav">
+						<ol class="breadcrumb__list">
+							<li class="breadcrumb__item">
+								<a href="index.html" class="breadcrumb__link">
+									<svg class="breadcrumb__icon">
+										<use xlink:href="img/sprite.svg#icon-home"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="breadcrumb__item">
+								<a href="press-center.html" class="breadcrumb__link">Пресс центр</a>
+							</li>
+						</ol>
+						<div class="breadcrumb__delimiter"></div>
+					</nav>
+				</div>
+			</div>
+			<!-- end of breadcrumb -->
+			<!-- main -->
+			<section class="main" id="main">
+				<div class="container">
+					<div class="main__wrap" style="background-image: url(img/about-img.jpg);">
+						<h1 class="main__heading">Пресс центр</h1>
+					</div>
+				</div>
+			</section>
+			<!-- end of main -->
+			<!-- news -->
+			<section class="news" id="news">
+				<div class="container">
+					<div class="news__slider">
+						<div class="section-heading">
+							<h2 class="section-heading__title">Новости</h2>
+							<span class="section-heading__delimiter"></span>
+							<div class="swiper-controls section-heading__controls">
+								<button class="swiper-button-prev">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<button class="swiper-button-next">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="news__slider-wrapper">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#" class="news__item">
+											<span class="news__title">Аэропорт Махачкалы в октябре обслужил почти 220 тысяч пассажиров</span>
+											<span class="news__description">Обслужено 219 039 пассажиров, что на 6,8% превышает аналогичный показатель 2021 года</span>
+											<div class="news__bottom">
+												<span class="news__value">20</span>
+												<div class="news__group">
+													<span class="news__help">Октября</span>
+													<span class="news__help news__help--grey">2022</span>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="news__item">
+											<span class="news__title">Дагестан и Дубай участят авиа-сообщение: рейсы вырастут до пяти в неделю</span>
+											<span class="news__description">Регулярные рейсы по этому направлению будет выполнять авиакомпания Flydubai пять раз в неделю </span>
+											<div class="news__bottom">
+												<span class="news__value">29</span>
+												<div class="news__group">
+													<span class="news__help">Октября</span>
+													<span class="news__help news__help--grey">2022</span>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="news__item">
+											<span class="news__title">Дагестан и Стамбул <br>свяжут дополнительные рейсы</span>
+											<span class="news__description">С 30 октября авиакомпания <br>ИрАэро запускает дополните-льные регулярные рейсы из Махачкалы в Стамбул</span>
+											<div class="news__bottom">
+												<span class="news__value">27</span>
+												<div class="news__group">
+													<span class="news__help">Октября</span>
+													<span class="news__help news__help--grey">2022</span>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="news__item">
+											<span class="news__title">Махачкала и Тюмень связываются новым авиарейсом</span>
+											<span class="news__description">С 16 сентября запускаются <br>прямые рейсы из аэропорта Махачкалы им. Амет-Хана <br>Султана в Тюмень</span>
+											<div class="news__bottom">
+												<span class="news__value">12</span>
+												<div class="news__group">
+													<span class="news__help">Октября</span>
+													<span class="news__help news__help--grey">2022</span>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="news__item">
+											<span class="news__title">Дагестан и Стамбул <br>свяжут дополнительные рейсы</span>
+											<span class="news__description">С 30 октября авиакомпания <br>ИрАэро запускает дополните-льные регулярные рейсы из Махачкалы в Стамбул</span>
+											<div class="news__bottom">
+												<span class="news__value">27</span>
+												<div class="news__group">
+													<span class="news__help">Октября</span>
+													<span class="news__help news__help--grey">2022</span>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="news__item">
+											<span class="news__title">Аэропорт Махачкалы в октябре обслужил почти 220 тысяч пассажиров</span>
+											<span class="news__description">Обслужено 219 039 пассажиров, что на 6,8% превышает аналогичный показатель 2021 года</span>
+											<div class="news__bottom">
+												<span class="news__value">20</span>
+												<div class="news__group">
+													<span class="news__help">Октября</span>
+													<span class="news__help news__help--grey">2022</span>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section-bottom">
+							<span class="section-bottom__delimiter"></span>
+							<div class="swiper-controls section-bottom__controls">
+								<button class="swiper-button-prev">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<button class="swiper-button-next">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of news -->
+			<!-- photogallery -->
+			<section class="photogallery" id="photogalleryv">
+				<div class="container">
+					<div class="photogallery__slider">
+						<div class="section-heading">
+							<h2 class="section-heading__title">Фотогалерея</h2>
+							<span class="section-heading__delimiter"></span>
+							<div class="swiper-controls section-heading__controls">
+								<button class="swiper-button-prev">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<button class="swiper-button-next">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="photogallery__slider-wrapper">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<article class="photogallery__item" style="background-image: url(img/photogallery-01.jpg);">
+											<div class="photogallery__body">
+												<span class="photogallery__title">История аэропорта</span>
+												<a href="#" class="photogallery__more">
+													<span>Подробнее</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="photogallery__item" style="background-image: url(img/photogallery-02.jpg);">
+											<div class="photogallery__body">
+												<span class="photogallery__title">Ход реконструкции</span>
+												<a href="#" class="photogallery__more">
+													<span>Подробнее</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="photogallery__item" style="background-image: url(img/photogallery-01.jpg);">
+											<div class="photogallery__body">
+												<span class="photogallery__title">История аэропорта</span>
+												<a href="#" class="photogallery__more">
+													<span>Подробнее</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section-bottom">
+							<span class="section-bottom__delimiter"></span>
+							<div class="swiper-controls section-bottom__controls">
+								<button class="swiper-button-prev">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<button class="swiper-button-next">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of photogallery -->
+			<!-- page navigation -->
+			<div class="page-navigation" id="page-navigation">
+				<div class="container">
+					<div class="page-navigation__wrapper">
+						<article class="page-navigation__item">
+							<div class="page-navigation__group">
+								<h3 class="page-navigation__title">КОНТАКТЫ ДЛЯ СМИ</h3>
+								<p class="page-navigation__description">Склад службы организации почтово-грузовых перевозок расположен на территории аэропорта</p>
+							</div>
+							<a href="#" class="page-navigation__more">
+								<span>Узнать подробнее</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="page-navigation__item">
+							<div class="page-navigation__group">
+								<h3 class="page-navigation__title">Форма обратной связи</h3>
+								<p class="page-navigation__description">Информационная Карточка организаци АО «Международный аэропорт «Махачкала»»</p>
+							</div>
+							<a href="#" class="page-navigation__more">
+								<span>Узнать подробнее</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="page-navigation__item">
+							<div class="page-navigation__group">
+								<h3 class="page-navigation__title">ПОДПИСКА ПО EMAIL</h3>
+								<p class="page-navigation__description">Информационная Карточка организаци АО «Международный аэропорт «Махачкала»»</p>
+							</div>
+							<a href="#" class="page-navigation__more">
+								<span>Узнать подробнее</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+								</svg>
+							</a>
+						</article>
+					</div>
+				</div>
+			</div>
+			<!-- end of page navigation -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__wrapper footer__wrapper--main">
+					<div class="footer__block footer__block--space-between">
+						<div class="footer__info">
+							<a href="tel:+78722555500" class="footer__phone">+7 (8722) 55-55-00</a>
+							<span class="footer__help">Справочная служба <br>аэропорта</span>
+						</div>
+						<div class="footer__info">
+							<picture class="footer__logotype">
+								<source srcset="img/logotype-colors.svg" media="(min-width: 768px)">
+								<img src="img/logotype-colors-center.svg" alt="МАХАЧКАЛА - Международный аэропорт">
+							</picture>
+							<p class="footer__copyright footer__copyright--mobile">© 2022 </p>
+						</div>
+					</div>
+					<div class="footer__block">
+						<h3 class="footer__subtitle">Пассажирам</h3>
+						<div class="footer__columns">
+							<ul class="footer-nav footer__nav">
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Рейсы и авиакомпании</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Транспорт</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Схема аэропорта</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Регистрация на рейс</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Контроль и досмотр</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Багаж</a>
+								</li>
+							</ul>
+							<ul class="footer-nav footer__nav">
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Пассажирам с детьми</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">VIP обслуживание</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Медицинаская помощь</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Сервисы в аэропорту</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Пассажирам с ограниченными <br>возможностями</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<h3 class="footer__subtitle">Партнерам</h3>
+						<div class="footer__columns">
+							<ul class="footer-nav footer__nav">
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Авиакомпаниям</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Аренда в аэропорту</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Реклама в эропорту</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Закупки</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Реквизиты компании</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Почтово-грузовой склад</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__wrapper footer__wrapper--bottom">
+					<div class="footer__block">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Карта сайта</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Обратная связь</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Правила пользования аэровокзальным комплексом</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Юридическая информация</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block">
+						<p class="footer__copyright">© 2022 Международный <br>Аэропорт «Махачкала»</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
