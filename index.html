@@ -32,15 +32,19 @@
 						<nav class="nav header__nav">
 							<ul class="nav__list">
 								<li class="nav__item">
+									<!-- nav__link--active -->
 									<a href="#" class="nav__link">Табло рейсов</a>
 								</li>
 								<li class="nav__item">
+									<!-- nav__link--active -->
 									<a href="#" class="nav__link">Авиакомпании</a>
 								</li>
 								<li class="nav__item">
+									<!-- nav__link--active -->
 									<a href="#" class="nav__link">Пресс центр</a>
 								</li>
 								<li class="nav__item">
+									<!-- nav__link--active -->
 									<a href="#" class="nav__link">Об аэропорте</a>
 								</li>
 							</ul>
@@ -216,6 +220,34 @@
 		</div>
 		<div class="menu-overlay" id="menu-overlay"></div>
 		<!-- end of menu -->
+		<!-- navigation buttons -->
+		<div class="nav-buttons">
+			<ul class="nav-buttons__list">
+				<li class="nav-buttons__item">
+					<a href="flight-board.html" class="nav-buttons__link">
+						<svg class="nav-buttons__icon">
+							<use xlink:href="img/sprite.svg#icon-departure"></use>
+						</svg>
+						<div class="nav-buttons__group">
+							<span class="nav-buttons__title">ВЫЛЕТ</span>
+							<span class="nav-buttons__help">Табло вылета</span>
+						</div>
+					</a>
+				</li>
+				<li class="nav-buttons__item">
+					<a href="flight-board.html" class="nav-buttons__link">
+						<svg class="nav-buttons__icon">
+							<use xlink:href="img/sprite.svg#icon-arrival"></use>
+						</svg>
+						<div class="nav-buttons__group">
+							<span class="nav-buttons__title">ПРИЛЕТ</span>
+							<span class="nav-buttons__help">Табло прилета</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- end of navigation buttons -->
 		<!-- content -->
 		<div class="wrapper__content">
 			<!-- main search -->

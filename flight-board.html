@@ -32,15 +32,19 @@
 						<nav class="nav header__nav">
 							<ul class="nav__list">
 								<li class="nav__item">
+									<!-- nav__link--active -->
 									<a href="#" class="nav__link">Табло рейсов</a>
 								</li>
 								<li class="nav__item">
+									<!-- nav__link--active -->
 									<a href="#" class="nav__link">Авиакомпании</a>
 								</li>
 								<li class="nav__item">
+									<!-- nav__link--active -->
 									<a href="#" class="nav__link">Пресс центр</a>
 								</li>
 								<li class="nav__item">
+									<!-- nav__link--active -->
 									<a href="#" class="nav__link">Об аэропорте</a>
 								</li>
 							</ul>
@@ -256,6 +260,329 @@
 				</div>
 			</div>
 			<!-- end of breadcrumb -->
+			<!-- flight board -->
+			<section class="flight-board" id="flight-board">
+				<div class="container">
+					<div class="flight-board__top">
+						<h1 class="flight-board__heading">Табло рейсов</h1>
+						<div class="flight-board__data">
+							<div class="flight-board__data-item">
+								<div class="c-data c-data--underline">
+									<svg class="c-data__icon">
+										<use xlink:href="img/sprite.svg#icon-calendar"></use>
+									</svg>
+									<span class="c-data__title">Вс, 23 Ноя, 16:20</span>
+								</div>
+							</div>
+							<div class="flight-board__data-item">
+								<div class="c-data">
+									<svg class="c-data__icon">
+										<use xlink:href="img/sprite.svg#icon-weather"></use>
+									</svg>
+									<span class="c-data__title">+ 12</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flight-board__info">
+						<ul class="board-tabs flight-board__tabs">
+							<li class="board-tabs__item board-tabs__item--active">
+								<button class="board-tabs__tab">
+									<svg class="board-tabs__icon">
+										<use xlink:href="img/sprite.svg#icon-departure"></use>
+									</svg>
+									<div class="board-tabs__group">
+										<span class="board-tabs__title">ВЫЛЕТ</span>
+										<span class="board-tabs__help">Табло вылета</span>
+									</div>
+								</button>
+							</li>
+							<li class="board-tabs__item">
+								<button class="board-tabs__tab">
+									<svg class="board-tabs__icon">
+										<use xlink:href="img/sprite.svg#icon-arrival"></use>
+									</svg>
+									<div class="board-tabs__group">
+										<span class="board-tabs__title">ПРИЛЕТ</span>
+										<span class="board-tabs__help">Табло прилета</span>
+									</div>
+								</button>
+							</li>
+						</ul>
+						<ul class="flight-board__sort c-sort">
+							<li class="c-sort__item">
+								<div href="#" class="c-sort__elem">
+									<input type="radio" id="c-sort-01" class="c-sort__input" name="c-sort">
+									<label for="c-sort-01" class="c-sort__label">Вчера</label>
+								</div>
+							</li>
+							<li class="c-sort__item">
+								<div href="#" class="c-sort__elem">
+									<input type="radio" id="c-sort-02" class="c-sort__input" name="c-sort" checked>
+									<label for="c-sort-02" class="c-sort__label">Сегодня</label>
+								</div>
+							</li>
+							<li class="c-sort__item">
+								<div href="#" class="c-sort__elem">
+									<input type="radio" id="c-sort-03" class="c-sort__input" name="c-sort">
+									<label for="c-sort-03" class="c-sort__label">Завтра</label>
+								</div>
+							</li>
+							<li class="c-sort__item">
+								<div href="#" class="c-sort__elem">
+									<input type="radio" id="c-sort-04" class="c-sort__input" name="c-sort">
+									<label for="c-sort-04" class="c-sort__label">Послезавтра</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="flight-board__table c-table">
+						<table class="c-table__table">
+							<thead class="c-table__head">
+								<tr class="c-table__row">
+									<td class="c-table__elem">
+										<span class="c-table__heading">Рейс</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__heading">Направление</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__heading">Авиакомания</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__heading">Время вылета</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__heading">Ожидаемое время</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__heading">Статус</span>
+									</td>
+								</tr>
+							</thead>
+							<tbody class="c-table__body">
+								<tr class="c-table__row">
+									<td class="c-table__elem">
+										<span class="c-table__value">U6-9664</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">
+											<picture class="c-table__icon-wrap">
+												<img src="img/icon-a.svg" alt="Icon">
+											</picture>
+											<span>UVT Aero</span>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">
+											<b>Казань</b>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--light-grey">Ожидается</span>
+									</td>
+								</tr>
+								<tr class="c-table__row">
+									<td class="c-table__elem">
+										<span class="c-table__value">U6-9664</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">
+											<picture class="c-table__icon-wrap">
+												<img src="img/icon-a.svg" alt="Icon">
+											</picture>
+											<span>UVT Aero</span>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">
+											<b>Казань</b>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--light-grey">Ожидается</span>
+									</td>
+								</tr>
+								<tr class="c-table__row">
+									<td class="c-table__elem">
+										<span class="c-table__value">U6-9664</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">
+											<picture class="c-table__icon-wrap">
+												<img src="img/icon-r.svg" alt="Icon">
+											</picture>
+											<span>UVT Aero</span>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">
+											<b>Магадан</b>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">Отправлен</span>
+									</td>
+								</tr>
+								<tr class="c-table__row">
+									<td class="c-table__elem">
+										<span class="c-table__value">U6-9664</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">
+											<picture class="c-table__icon-wrap">
+												<img src="img/icon-f.svg" alt="Icon">
+											</picture>
+											<span>UVT Aero</span>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">
+											<b>Магадан</b>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--orange">Задержан</span>
+									</td>
+								</tr>
+								<tr class="c-table__row">
+									<td class="c-table__elem">
+										<span class="c-table__value">U6-9664</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">
+											<picture class="c-table__icon-wrap">
+												<img src="img/icon-f.svg" alt="Icon">
+											</picture>
+											<span>UVT Aero</span>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">
+											<b>Магадан</b>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--red">Отменен</span>
+									</td>
+								</tr>
+								<tr class="c-table__row">
+									<td class="c-table__elem">
+										<span class="c-table__value">U6-9664</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">
+											<picture class="c-table__icon-wrap">
+												<img src="img/icon-a.svg" alt="Icon">
+											</picture>
+											<span>UVT Aero</span>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">
+											<b>Казань</b>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--light-grey">Ожидается</span>
+									</td>
+								</tr>
+								<tr class="c-table__row">
+									<td class="c-table__elem">
+										<span class="c-table__value">U6-9664</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">
+											<picture class="c-table__icon-wrap">
+												<img src="img/icon-a.svg" alt="Icon">
+											</picture>
+											<span>UVT Aero</span>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">
+											<b>Казань</b>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--light-grey">Ожидается</span>
+									</td>
+								</tr>
+								<tr class="c-table__row">
+									<td class="c-table__elem">
+										<span class="c-table__value">U6-9664</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">
+											<picture class="c-table__icon-wrap">
+												<img src="img/icon-a.svg" alt="Icon">
+											</picture>
+											<span>UVT Aero</span>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">
+											<b>Казань</b>
+										</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--grey">02:40</span>
+									</td>
+									<td class="c-table__elem">
+										<span class="c-table__value c-table__value--light-grey">Ожидается</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+			<!-- end of flight board -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
