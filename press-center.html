@@ -94,12 +94,6 @@
 						</svg>
 						<span>Версия для слабовидящих</span>
 					</a>
-					<a href="#" class="c-location menu__location">
-						<svg class="c-location__icon">
-							<use xlink:href="img/sprite.svg#icon-location"></use>
-						</svg>
-						<span>Как добраться</span>
-					</a>
 					<button class="menu__close-btn menu__close">
 						<svg class="menu__close-icon">
 							<use xlink:href="img/sprite.svg#icon-close-square"></use>
@@ -109,54 +103,95 @@
 			</div>
 			<div class="menu__main">
 				<div class="menu__wrapper">
-					<div class="c-accordeon services__wrapper">
+					<a href="#" class="c-location menu__location menu__location--mobile">
+						<svg class="c-location__icon">
+							<use xlink:href="img/sprite.svg#icon-location"></use>
+						</svg>
+						<span>Как добраться</span>
+					</a>
+					<div class="c-accordeon menu__accordeon">
 						<div class="c-accordeon__item">
 							<button class="c-accordeon__trigger">Пассажирам</button>
 							<div class="c-accordeon__wrapper">
 								<nav class="menu-nav">
 									<ul class="menu-nav__list">
 										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Рейсы и авиакомпании</a>
+											<a href="#" class="menu-nav__link" data-submenu-id="0">Табло рейсов</a>
 										</li>
 										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Транспорт</a>
+											<a href="#" class="menu-nav__link" data-submenu-id="1">Схема аэропорта</a>
 										</li>
 										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Схема аэропорта</a>
+											<a href="#" class="menu-nav__link" data-submenu-id="2">Услуги</a>
 										</li>
 										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Регистрация на рейс</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Контроль и досмотр</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Багаж</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Пассажирам с детьми</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">VIP обслуживание</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Медицинаская помощь</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Сервисы в аэропорту</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Пассажирам с ограниченными возможностями</a>
+											<a href="#" class="menu-nav__link" data-submenu-id="3">Об аэропорте</a>
 										</li>
 									</ul>
-									<ul class="menu-nav__submenu">
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__sublink">Заказать такси</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__sublink">Автопрокат</a>
-										</li>
-									</ul>
+									<div class="menu-nav__sub">
+										<ul class="menu-nav__submenu">
+											<li class="menu-nav__item">
+												<a href="flight-board.html" class="menu-nav__sublink">Онлайн-табло</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Расписание</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Авиакомпании</a>
+											</li>
+										</ul>
+										<ul class="menu-nav__submenu">
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Терминал А</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Терминал Б</a>
+											</li>
+										</ul>
+										<ul class="menu-nav__submenu">
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">VIP-залы</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Парковка</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Такси</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Автопрокат</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Гостиница</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Еда и напитки</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Магазины</a>
+											</li>
+										</ul>
+										<ul class="menu-nav__submenu">
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">История</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Стратегия развития</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Вакансии</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Руководство</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Обратная связь</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Контакты</a>
+											</li>
+										</ul>
+									</div>
 								</nav>
 							</div>
 						</div>
@@ -166,37 +201,119 @@
 								<nav class="menu-nav">
 									<ul class="menu-nav__list">
 										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Авиакомпаниям</a>
+											<a href="#" class="menu-nav__link" data-submenu-id="0">Авиакомпаниям</a>
 										</li>
 										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Аренда в аэропорту</a>
+											<a href="#" class="menu-nav__link" data-submenu-id="1">Аренда</a>
 										</li>
 										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Реклама в эропорту</a>
+											<a href="#" class="menu-nav__link" data-submenu-id="2">Реклама</a>
 										</li>
 										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Закупки</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Реквизиты компании</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link">Почтово-грузовой склад</a>
+											<a href="#" class="menu-nav__link" data-submenu-id="3">Грузовой склад</a>
 										</li>
 									</ul>
+									<div class="menu-nav__sub">
+										<ul class="menu-nav__submenu" data-submenu-id="0">
+											<li class="menu-nav__item">
+												<a href="flight-board.html" class="menu-nav__sublink">Онлайн-табло</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Расписание</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Авиакомпании</a>
+											</li>
+										</ul>
+										<ul class="menu-nav__submenu" data-submenu-id="1">
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Терминал А</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Терминал Б</a>
+											</li>
+										</ul>
+										<ul class="menu-nav__submenu" data-submenu-id="2">
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">VIP-залы</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Парковка</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Такси</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Автопрокат</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Гостиница</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Еда и напитки</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Магазины</a>
+											</li>
+										</ul>
+										<ul class="menu-nav__submenu" data-submenu-id="3">
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">История</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Стратегия развития</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Вакансии</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Руководство</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Обратная связь</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Контакты</a>
+											</li>
+										</ul>
+									</div>
 								</nav>
 							</div>
 						</div>
 						<div class="c-accordeon__item">
-							<button class="c-accordeon__trigger">Пресс центр</button>
+							<button class="c-accordeon__trigger">Раскрытие информации</button>
 							<div class="c-accordeon__wrapper">
-								<nav class="menu-nav"></nav>
-							</div>
-						</div>
-						<div class="c-accordeon__item">
-							<button class="c-accordeon__trigger">Об аэропорте</button>
-							<div class="c-accordeon__wrapper">
-								<nav class="menu-nav"></nav>
+								<nav class="menu-nav">
+									<ul class="menu-nav__list">
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link" data-submenu-id="0">Пункт 1</a>
+										</li>
+										<li class="menu-nav__item">
+											<a href="#" class="menu-nav__link" data-submenu-id="1">Пункт 2</a>
+										</li>
+									</ul>
+									<div class="menu-nav__sub">
+										<ul class="menu-nav__submenu">
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Подпункт 1</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Подпункт 2</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Подпункт 3</a>
+											</li>
+										</ul>
+										<ul class="menu-nav__submenu">
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Подпункт 1</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__sublink">Подпункт 2</a>
+											</li>
+										</ul>
+									</div>
+								</nav>
 							</div>
 						</div>
 					</div>
@@ -210,10 +327,18 @@
 						<p class="menu__copyright">© 2022 Международный Аэропорт«Махачкала»</p>
 						<a href="#" class="c-visually-impaired menu__visually-impaired menu__visually-impaired--mobile">
 							<svg class="c-visually-impaired__icon">
-								<use xlink:href="img/sprite.svg#icon-location"></use>
+								<use xlink:href="img/sprite.svg#icon-eye"></use>
 							</svg>
 							<span>Версия для слабовидящих</span>
 						</a>
+						<ul class="c-language-list menu__language">
+							<li class="c-language-list__item c-language-list__item--active">
+								<button class="c-language-list__value">RU</button>
+							</li>
+							<li class="c-language-list__item">
+								<button class="c-language-list__value">EN</button>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -250,23 +375,6 @@
 		<!-- end of navigation buttons -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- main search -->
-			<div class="main-search">
-				<div class="container">
-					<form action="#" class="main-search__controls">
-						<svg class="main-search__icon">
-							<use xlink:href="img/sprite.svg#icon-search"></use>
-						</svg>
-						<input type="text" class="main-search__input" placeholder="Поиск рейса по номеру, городу или названию авиакомпании">
-						<button class="main-search__btn">
-							<svg class="main-search__btn-icon">
-								<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
-							</svg>
-						</button>
-					</form>
-				</div>
-			</div>
-			<!-- end of main search -->
 			<!-- breadcrumb -->
 			<div class="breadcrumb" aria-label="Breadcrumb">
 				<div class="container">
@@ -561,7 +669,166 @@
 		<!-- footer -->
 		<footer class="footer" id="footer">
 			<div class="container">
-				<div class="footer__wrapper footer__wrapper--main">
+				<div class="footer__wrapper footer__wrapper--mobile">
+					<div class="c-accordeon footer__accordeon">
+						<div class="c-accordeon__item">
+							<button class="c-accordeon__trigger">Пассажирам</button>
+							<div class="c-accordeon__wrapper">
+								<div class="footer__block">
+									<h3 class="footer__subtitle">Табло рейсов</h3>
+									<div class="footer__columns">
+										<ul class="footer-nav footer__nav">
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Онлайн-табло</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Расписание</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Авиакомпании</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer__block">
+									<h3 class="footer__subtitle">Схема аэропорта</h3>
+									<div class="footer__columns">
+										<ul class="footer-nav footer__nav">
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Терминал A</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Терминал Б</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer__block">
+									<h3 class="footer__subtitle">Услуги</h3>
+									<div class="footer__columns">
+										<ul class="footer-nav footer__nav">
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">VIP-залы</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Парковка</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Такси</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Автопрокат</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Гостиница</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Еда и напитки</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Магазины</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer__block">
+									<h3 class="footer__subtitle">Об аэропорте</h3>
+									<div class="footer__columns">
+										<ul class="footer-nav footer__nav">
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">История</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Стратегия развития</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Вакансии</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Руководство</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Обратная связь</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Контакты</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="c-accordeon__item">
+							<button class="c-accordeon__trigger">Партнерам</button>
+							<div class="c-accordeon__wrapper">
+								<div class="footer__block">
+									<h3 class="footer__subtitle">Авиакомпаниям</h3>
+									<div class="footer__columns">
+										<ul class="footer-nav footer__nav">
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Сборы и тарифы</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Авиа ГСМ</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Скидки</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer__block">
+									<h3 class="footer__subtitle">Аренда</h3>
+									<div class="footer__columns">
+										<ul class="footer-nav footer__nav">
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Аренда</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer__block">
+									<h3 class="footer__subtitle">Реклама</h3>
+									<div class="footer__columns">
+										<ul class="footer-nav footer__nav">
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Реклама</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer__block">
+									<h3 class="footer__subtitle">Грузовой склад</h3>
+									<div class="footer__columns">
+										<ul class="footer-nav footer__nav">
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Перевозка груза</a>
+											</li>
+											<li class="footer-nav__item">
+												<a href="#" class="footer-nav__link">Услуги склада</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__reference">
+						<div class="footer__info">
+							<a href="tel:+78722555500" class="footer__phone">+7 (8722) 55-55-00</a>
+							<span class="footer__help">Справочная служба <br>аэропорта</span>
+						</div>
+						<div class="footer__info">
+							<picture class="footer__logotype">
+								<source srcset="img/logotype-colors.svg" media="(min-width: 768px)">
+								<img src="img/logotype-colors-center.svg" alt="МАХАЧКАЛА - Международный аэропорт">
+							</picture>
+							<p class="footer__copyright footer__copyright--mobile">© 2022 </p>
+						</div>
+					</div>
+				</div>
+				<!-- for passeengers desktop -->
+				<div class="footer__wrapper footer__wrapper--main footer__wrapper--passengers">
 					<div class="footer__block footer__block--space-between">
 						<div class="footer__info">
 							<a href="tel:+78722555500" class="footer__phone">+7 (8722) 55-55-00</a>
@@ -576,75 +843,157 @@
 						</div>
 					</div>
 					<div class="footer__block">
-						<h3 class="footer__subtitle">Пассажирам</h3>
+						<h3 class="footer__subtitle">Табло рейсов</h3>
 						<div class="footer__columns">
 							<ul class="footer-nav footer__nav">
 								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Рейсы и авиакомпании</a>
+									<a href="#" class="footer-nav__link">Онлайн-табло</a>
 								</li>
 								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Транспорт</a>
+									<a href="#" class="footer-nav__link">Расписание</a>
 								</li>
 								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Схема аэропорта</a>
-								</li>
-								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Регистрация на рейс</a>
-								</li>
-								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Контроль и досмотр</a>
-								</li>
-								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Багаж</a>
-								</li>
-							</ul>
-							<ul class="footer-nav footer__nav">
-								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Пассажирам с детьми</a>
-								</li>
-								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">VIP обслуживание</a>
-								</li>
-								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Медицинаская помощь</a>
-								</li>
-								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Сервисы в аэропорту</a>
-								</li>
-								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Пассажирам с ограниченными <br>возможностями</a>
+									<a href="#" class="footer-nav__link">Авиакомпании</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="footer__block">
-						<h3 class="footer__subtitle">Партнерам</h3>
+						<h3 class="footer__subtitle">Схема аэропорта</h3>
 						<div class="footer__columns">
 							<ul class="footer-nav footer__nav">
 								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Авиакомпаниям</a>
+									<a href="#" class="footer-nav__link">Терминал A</a>
 								</li>
 								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Аренда в аэропорту</a>
+									<a href="#" class="footer-nav__link">Терминал Б</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<h3 class="footer__subtitle">Услуги</h3>
+						<div class="footer__columns">
+							<ul class="footer-nav footer__nav">
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">VIP-залы</a>
 								</li>
 								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Реклама в эропорту</a>
+									<a href="#" class="footer-nav__link">Парковка</a>
 								</li>
 								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Закупки</a>
+									<a href="#" class="footer-nav__link">Такси</a>
 								</li>
 								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Реквизиты компании</a>
+									<a href="#" class="footer-nav__link">Автопрокат</a>
 								</li>
 								<li class="footer-nav__item">
-									<a href="#" class="footer-nav__link">Почтово-грузовой склад</a>
+									<a href="#" class="footer-nav__link">Гостиница</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Еда и напитки</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Магазины</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<h3 class="footer__subtitle">Об аэропорте</h3>
+						<div class="footer__columns">
+							<ul class="footer-nav footer__nav">
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">История</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Стратегия развития</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Вакансии</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Руководство</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Обратная связь</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="#" class="footer-nav__link">Контакты</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
+				<!-- end of passeengers desktop -->
+				<!-- for partners desktop -->
+				<!-- <div class="footer__wrapper footer__wrapper--main footer__wrapper--partners">
+            <div class="footer__block footer__block--space-between">
+                <div class="footer__info">
+                    <a href="tel:+78722555500" class="footer__phone">+7 (8722) 55-55-00</a>
+                    <span class="footer__help">Справочная служба <br>аэропорта</span>
+                </div>
+                <div class="footer__info">
+                    <picture class="footer__logotype">
+                        <source srcset="img/logotype-colors.svg" media="(min-width: 768px)">
+                        <img src="img/logotype-colors-center.svg" alt="МАХАЧКАЛА - Международный аэропорт">
+                    </picture>
+                    <p class="footer__copyright footer__copyright--mobile">© 2022 </p>
+                </div>
+            </div>
+            <div class="footer__block">
+                <h3 class="footer__subtitle">Авиакомпаниям</h3>
+                <div class="footer__columns">
+                    <ul class="footer-nav footer__nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Сборы и тарифы</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Авиа ГСМ</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Скидки</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__block">
+                <h3 class="footer__subtitle">Аренда</h3>
+                <div class="footer__columns">
+                    <ul class="footer-nav footer__nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Аренда</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__block">
+                <h3 class="footer__subtitle">Реклама</h3>
+                <div class="footer__columns">
+                    <ul class="footer-nav footer__nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Реклама</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__block">
+                <h3 class="footer__subtitle">Грузовой склад</h3>
+                <div class="footer__columns">
+                    <ul class="footer-nav footer__nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Перевозка груза</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Услуги склада</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+				<!-- end of partners desktop -->
 				<div class="footer__wrapper footer__wrapper--bottom">
-					<div class="footer__block">
+					<div class="footer__bottom-block">
 						<ul class="footer__list">
 							<li class="footer__item">
 								<a href="#" class="footer__link">Карта сайта</a>
@@ -654,7 +1003,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer__block">
+					<div class="footer__bottom-block">
 						<ul class="footer__list">
 							<li class="footer__item">
 								<a href="#" class="footer__link">Правила пользования аэровокзальным комплексом</a>
@@ -664,7 +1013,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer__block">
+					<div class="footer__bottom-block">
 						<p class="footer__copyright">© 2022 Международный <br>Аэропорт «Махачкала»</p>
 					</div>
 				</div>
