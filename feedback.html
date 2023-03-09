@@ -420,9 +420,14 @@
 							</div>
 						</div>
 						<div class="feedback-form__group">
-							<div class="input-group feedback-form__input">
-								<input type="text" class="input-group__input" id="feedback-tel" placeholder="Контактный телефон">
-								<label for="feedback-tel" class="input-group__label">Контактный телефон</label>
+							<div class="feedback-form__select default-select">
+								<select class="js-select">
+									<option data-placeholder="true">Тема обращения</option>
+									<option value="theme-01">Тема 1</option>
+									<option value="theme-02">Тема 2</option>
+									<option value="theme-03">Тема 3</option>
+									<option value="theme-04">Тема 4</option>
+								</select>
 							</div>
 						</div>
 						<div class="feedback-form__group feedback-form__group--ultra">
@@ -432,9 +437,13 @@
 							</div>
 						</div>
 						<div class="feedback-form__group">
-							<div class="feedback-form__plug"></div>
+							<div class="input-group feedback-form__input">
+								<input type="text" class="input-group__input" id="feedback-tel" placeholder="Контактный телефон">
+								<label for="feedback-tel" class="input-group__label">Контактный телефон</label>
+							</div>
 						</div>
-						<div class="feedback-form__group">
+						<div class="feedback-form__group feedback-form__group--captcha">
+							<div class="feedback-form__captcha">123</div>
 							<div class="input-group feedback-form__input">
 								<input type="text" class="input-group__input" id="feedback-code" placeholder="Введите код с картинки:">
 								<label for="feedback-code" class="input-group__label">Введите код с картинки:<span>*</span></label>
