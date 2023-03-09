@@ -375,6 +375,23 @@
 		<!-- end of navigation buttons -->
 		<!-- content -->
 		<div class="wrapper__content">
+			<!-- main search -->
+			<div class="main-search">
+				<div class="container">
+					<form action="#" class="main-search__controls">
+						<svg class="main-search__icon">
+							<use xlink:href="img/sprite.svg#icon-search"></use>
+						</svg>
+						<input type="text" class="main-search__input" placeholder="Поиск рейса по номеру, городу или названию авиакомпании">
+						<button class="main-search__btn">
+							<svg class="main-search__btn-icon">
+								<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+			<!-- end of main search -->
 			<!-- breadcrumb -->
 			<div class="breadcrumb" aria-label="Breadcrumb">
 				<div class="container">
@@ -388,7 +405,10 @@
 								</a>
 							</li>
 							<li class="breadcrumb__item">
-								<a href="about.html" class="breadcrumb__link">Об аэропорте</a>
+								<a href="flight-board.html" class="breadcrumb__link">Табло рейсов</a>
+							</li>
+							<li class="breadcrumb__item">
+								<a href="board.html" class="breadcrumb__link">Рейс U6-9664</a>
 							</li>
 						</ol>
 						<div class="breadcrumb__delimiter"></div>
@@ -396,137 +416,6 @@
 				</div>
 			</div>
 			<!-- end of breadcrumb -->
-			<!-- main -->
-			<section class="main" id="main">
-				<div class="container">
-					<div class="main__wrap" style="background-image: url(img/about-img.jpg);">
-						<div class="main__heading-wrap">
-							<h1 class="main__heading">Об аэропорте</h1>
-						</div>
-					</div>
-					<div class="main__inner">
-						<p class="main__description main__description--short">
-							Международный аэропорт Махачкалы – это старейшее авиапредприятие дагестанского авиационного узла, пережившее события, неразрывно <br>
-							связанные с историей России, а также с процессом становления и развития авиации Дагестана.
-						</p>
-						<div class="main__block main__block--title">
-							<h3 class="main__title">
-								Международный аэропорт имени <br>
-								дважды Героя Советского Союза <br>
-								Амет-Хана Султана
-							</h3>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end of main -->
-			<!-- page navigation -->
-			<div class="page-navigation section-indent" id="page-navigation">
-				<div class="container">
-					<div class="page-navigation__wrapper">
-						<article class="page-navigation__item">
-							<div class="page-navigation__group">
-								<h3 class="page-navigation__title">История аэропорта</h3>
-								<p class="page-navigation__description">Склад службы организации почтово-грузовых перевозок расположен на территории аэропорта</p>
-							</div>
-							<a href="#" class="page-navigation__more">
-								<span>Узнать подробнее</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-								</svg>
-							</a>
-						</article>
-						<article class="page-navigation__item">
-							<div class="page-navigation__group">
-								<h3 class="page-navigation__title">Стратегия развития</h3>
-								<p class="page-navigation__description">Отчетная информация о закупках <br>АО «Международный аэропорт «Махачкала»</p>
-							</div>
-							<a href="#" class="page-navigation__more">
-								<span>Узнать подробнее</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-								</svg>
-							</a>
-						</article>
-						<article class="page-navigation__item">
-							<div class="page-navigation__group">
-								<h3 class="page-navigation__title">Руководство</h3>
-								<p class="page-navigation__description">Информационная Карточка организаци АО «Международный аэропорт «Махачкала»»</p>
-							</div>
-							<a href="#" class="page-navigation__more">
-								<span>Узнать подробнее</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-								</svg>
-							</a>
-						</article>
-						<article class="page-navigation__item">
-							<div class="page-navigation__group">
-								<h3 class="page-navigation__title">Раскрытие информации</h3>
-								<p class="page-navigation__description">Склад службы организации почтово-грузовых перевозок расположен на территории аэропорта</p>
-							</div>
-							<a href="#" class="page-navigation__more">
-								<span>Узнать подробнее</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-								</svg>
-							</a>
-						</article>
-						<article class="page-navigation__item">
-							<div class="page-navigation__group">
-								<h3 class="page-navigation__title">Карьера</h3>
-								<p class="page-navigation__description">Отчетная информация о закупках <br>АО «Международный аэропорт «Махачкала»</p>
-							</div>
-							<a href="#" class="page-navigation__more">
-								<span>Узнать подробнее</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-								</svg>
-							</a>
-						</article>
-						<article class="page-navigation__item">
-							<div class="page-navigation__group">
-								<h3 class="page-navigation__title">Контакты</h3>
-								<p class="page-navigation__description">Информационная Карточка организаци АО «Международный аэропорт «Махачкала»»</p>
-							</div>
-							<a href="#" class="page-navigation__more">
-								<span>Узнать подробнее</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-								</svg>
-							</a>
-						</article>
-						<article class="page-navigation__item">
-							<div class="page-navigation__group">
-								<h3 class="page-navigation__title">Обратная связь</h3>
-								<p class="page-navigation__description">Склад службы организации почтово-грузовых перевозок расположен на территории аэропорта</p>
-							</div>
-							<a href="#" class="page-navigation__more">
-								<span>Узнать подробнее</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-								</svg>
-							</a>
-						</article>
-					</div>
-				</div>
-			</div>
-			<!-- end of page navigation -->
-			<!-- advertising banner -->
-			<div class="advertising-banner" id="advertising-banner">
-				<div class="container">
-					<a href="#" class="advertising-banner__wrap">
-						<picture class="advertising-banner__img">
-							<source srcset="img/banner.jpg" media="(min-width: 768px)">
-							<img src="img/banner-mobile.jpg" alt="Баннер">
-						</picture>
-						<span class="advertising-banner__text-wrap">
-							<span class="advertising-banner__text">Реклама 0+</span>
-						</span>
-					</a>
-				</div>
-			</div>
-			<!-- end of advertising banner -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
