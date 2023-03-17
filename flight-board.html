@@ -401,13 +401,24 @@
 				<div class="container">
 					<div class="flight-board__top">
 						<h1 class="flight-board__heading">Табло рейсов</h1>
+						<button class="flight-search flight-board__search">
+							<svg class="flight-search__icon">
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+							<span class="flight-search__title">Поиск рейса</span>
+						</button>
 						<div class="flight-board__data">
 							<div class="flight-board__data-item">
-								<div class="c-data c-data--underline">
+								<div class="c-data c-data--underline calendar-js">
 									<svg class="c-data__icon">
 										<use xlink:href="img/sprite.svg#icon-calendar"></use>
 									</svg>
-									<span class="c-data__title">Вс, 23 Ноя, 16:20</span>
+									<span class="c-data__title">Вс, 23 Ноя</span>
+								</div>
+							</div>
+							<div class="flight-board__data-item">
+								<div class="c-data">
+									<span class="c-data__title">16:20</span>
 								</div>
 							</div>
 							<div class="flight-board__data-item">
@@ -515,10 +526,10 @@
 													<span class="c-table__heading">Рейс</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Направление</span>
+													<span class="c-table__heading">Авиакомпания</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Авиакомания</span>
+													<span class="c-table__heading">Направление</span>
 												</td>
 												<td class="c-table__elem">
 													<span class="c-table__heading">Время вылета</span>
@@ -975,10 +986,10 @@
 													<span class="c-table__heading">Рейс</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Направление</span>
+													<span class="c-table__heading">Авиакомпания</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Авиакомания</span>
+													<span class="c-table__heading">Направление</span>
 												</td>
 												<td class="c-table__elem">
 													<span class="c-table__heading">Время вылета</span>
@@ -1813,10 +1824,10 @@
 													<span class="c-table__heading">Рейс</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Направление</span>
+													<span class="c-table__heading">Авиакомпания</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Авиакомания</span>
+													<span class="c-table__heading">Направление</span>
 												</td>
 												<td class="c-table__elem">
 													<span class="c-table__heading">Время вылета</span>
@@ -2525,10 +2536,10 @@
 													<span class="c-table__heading">Рейс</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Направление</span>
+													<span class="c-table__heading">Авиакомпания</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Авиакомания</span>
+													<span class="c-table__heading">Направление</span>
 												</td>
 												<td class="c-table__elem">
 													<span class="c-table__heading">Время вылета</span>
@@ -3365,10 +3376,10 @@
 													<span class="c-table__heading">Рейс</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Направление</span>
+													<span class="c-table__heading">Авиакомпания</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Авиакомания</span>
+													<span class="c-table__heading">Направление</span>
 												</td>
 												<td class="c-table__elem">
 													<span class="c-table__heading">Время прилёта</span>
@@ -4014,10 +4025,10 @@
 													<span class="c-table__heading">Рейс</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Направление</span>
+													<span class="c-table__heading">Авиакомпания</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Авиакомания</span>
+													<span class="c-table__heading">Направление</span>
 												</td>
 												<td class="c-table__elem">
 													<span class="c-table__heading">Время прилёта</span>
@@ -4852,10 +4863,10 @@
 													<span class="c-table__heading">Рейс</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Направление</span>
+													<span class="c-table__heading">Авиакомпания</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Авиакомания</span>
+													<span class="c-table__heading">Направление</span>
 												</td>
 												<td class="c-table__elem">
 													<span class="c-table__heading">Время прилёта</span>
@@ -5690,10 +5701,10 @@
 													<span class="c-table__heading">Рейс</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Направление</span>
+													<span class="c-table__heading">Авиакомпания</span>
 												</td>
 												<td class="c-table__elem">
-													<span class="c-table__heading">Авиакомания</span>
+													<span class="c-table__heading">Направление</span>
 												</td>
 												<td class="c-table__elem">
 													<span class="c-table__heading">Время прилёта</span>
@@ -6504,6 +6515,37 @@
 		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
+	<!-- flight search popup -->
+	<div class="flight-search-popup" id="flight-search-popup">
+		<div class="flight-search-popup__scroll">
+			<div class="flight-search-popup__wrapper">
+				<div class="flight-search-popup__controls">
+					<div class="flight-search-popup__inner">
+						<input type="text" class="flight-search-popup__input" placeholder="Поиск рейса по номеру, городу или названию авиакомпании">
+						<svg class="flight-search-popup__icon-search">
+							<use xlink:href="img/sprite.svg#icon-search"></use>
+						</svg>
+					</div>
+				</div>
+				<ul class="flight-search-popup__list">
+					<li class="flight-search-popup__item">
+						<a href="flight.html" class="flight-search-popup__link">
+							<span class="flight-search-popup__name">Рейс U6 9694 Махачкала – Нижневартовск авиакомпании Уральские авиалинии</span>
+							<span class="flight-search-popup__more">Подробнее</span>
+						</a>
+					</li>
+					<li class="flight-search-popup__item">
+						<a href="flight.html" class="flight-search-popup__link">
+							<span class="flight-search-popup__name">Рейс U6 9694 Махачкала – Нижневартовск авиакомпании Уральские авиалинии</span>
+							<span class="flight-search-popup__more">Подробнее</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flight-search-popup__overlay"></div>
+	</div>
+	<!-- end of flight search popup -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
