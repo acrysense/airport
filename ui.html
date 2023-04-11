@@ -957,7 +957,7 @@
 								<a href="#" class="footer__link">Карта сайта</a>
 							</li>
 							<li class="footer__item">
-								<a href="#" class="footer__link">Обратная связь</a>
+								<a href="#" class="footer__link modal-btn" data-id="modal-feedback">Обратная связь</a>
 							</li>
 						</ul>
 					</div>
@@ -980,6 +980,86 @@
 		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
+	<!-- modals -->
+	<div class="modal" id="modal-feedback">
+		<div class="modal__scroll">
+			<div class="modal__wrap">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close-square"></use>
+					</svg>
+				</button>
+				<div class="modal__wrapper">
+					<h3 class="modal__heading">Форма обратной связи</h3>
+					<form action="#" class="feedback-form modal__feedback">
+						<div class="feedback-form__group">
+							<div class="input-group feedback-form__input"> <!-- add class 'input-group--error' for visible error message -->
+								<input type="text" class="input-group__input" id="feedback-surname" placeholder="Фамилия">
+								<label for="feedback-surname" class="input-group__label">Фамилия<span>*</span></label>
+								<span class="input-group__error">Значение введено неверно!</span>
+							</div>
+						</div>
+						<div class="feedback-form__group">
+							<div class="input-group feedback-form__input">
+								<input type="text" class="input-group__input" id="feedback-name" placeholder="Имя">
+								<label for="feedback-name" class="input-group__label">Имя<span>*</span></label>
+							</div>
+						</div>
+						<div class="feedback-form__group">
+							<div class="input-group feedback-form__input">
+								<input type="email" class="input-group__input" id="feedback-email" placeholder="E-mail">
+								<label for="feedback-email" class="input-group__label">E-mail<span>*</span></label>
+							</div>
+						</div>
+						<div class="feedback-form__group">
+							<div class="feedback-form__select default-select">
+								<select class="js-select">
+									<option data-placeholder="true">Тема обращения</option>
+									<option value="theme-01">Тема 1</option>
+									<option value="theme-02">Тема 2</option>
+									<option value="theme-03">Тема 3</option>
+									<option value="theme-04">Тема 4</option>
+								</select>
+							</div>
+						</div>
+						<div class="feedback-form__group feedback-form__group--ultra">
+							<div class="input-group feedback-form__input">
+								<input type="text" class="input-group__input" id="feedback-text" placeholder="Текст сообщения">
+								<label for="feedback-text" class="input-group__label">Текст сообщения<span>*</span></label>
+							</div>
+						</div>
+						<div class="feedback-form__group">
+							<div class="input-group feedback-form__input">
+								<input type="text" class="input-group__input" id="feedback-tel" placeholder="Контактный телефон">
+								<label for="feedback-tel" class="input-group__label">Контактный телефон</label>
+							</div>
+						</div>
+						<div class="feedback-form__group feedback-form__group--captcha">
+							<div class="feedback-form__captcha">123</div>
+							<div class="input-group feedback-form__input">
+								<input type="text" class="input-group__input" id="feedback-code" placeholder="Введите код с картинки:">
+								<label for="feedback-code" class="input-group__label">Введите код с картинки:<span>*</span></label>
+							</div>
+						</div>
+						<div class="feedback-form__group feedback-form__group--center">
+							<label for="feedback-checkbox" class="switch switch--no-checked feedback-form__switch">
+								<input type="checkbox" id="feedback-checkbox" class="switch__input">
+								<div class="switch__group">
+									<span class="switch__icon"></span>
+									<span class="switch__title switch__title--right">Я согласен на обработку персональных данных*</span>
+								</div>
+							</label>
+						</div>
+						<div class="feedback-form__group">
+							<button class="feedback-form__btn btn">Отправить сообщение</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
