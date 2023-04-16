@@ -979,34 +979,37 @@
 								</div>
 							</div>
 							<div class="flight-tabs__sort-wrapper flight-tabs__sort-wrapper--active" data-board-sort="d-board-sort-today">
-								<div class="flight-board__table c-table">
-									<table class="c-table__table">
-										<thead class="c-table__head">
-											<tr class="c-table__row">
-												<td class="c-table__elem">
-													<span class="c-table__heading">Рейс</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__heading">Авиакомпания</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__heading">Направление</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__heading">Время вылета</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__heading">Ожидаемое время</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__heading">Статус</span>
-												</td>
-											</tr>
-										</thead>
-										<tbody class="c-table__body">
-											<tr class="c-table__row">
-												<td class="c-table__elem">
-													<div class="c-table__value">
+								<div class="flight-board__table c-flight-board">
+									<div class="c-flight-board__top">
+										<div class="c-flight-board__item">
+											<div class="c-flight-board__item-main">
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__heading">Рейс</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__heading">Направление</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__heading">Авиакомания</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__heading">Время вылета</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__heading">Ожидаемое время</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__heading">Статус</span>
+												</div>
+												<div class="c-flight-board__elem c-flight-board__elem--trigger"></div>
+											</div>
+										</div>
+									</div>
+									<div class="c-flight-board__body">
+										<div class="c-flight-board__item">
+											<div class="c-flight-board__item-main">
+												<div class="c-flight-board__elem">
+													<div class="c-flight-board__value">
 														<div class="c-board-info">
 															<a href="flight.html" class="c-board-info__link">U6-9664</a>
 															<div class="c-board-info__dropdown">
@@ -1043,33 +1046,74 @@
 															</div>
 														</div>
 													</div>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">
-														<picture class="c-table__icon-wrap">
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value c-flight-board__value--grey">
+														<picture class="c-flight-board__icon-wrap">
 															<img src="img/icon-a.svg" alt="Icon">
 														</picture>
 														<span>UVT Aero</span>
 													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value">
 														<b>Казань</b>
 													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--light-grey">Ожидается</span>
-												</td>
-											</tr>
-											<tr class="c-table__row">
-												<td class="c-table__elem">
-													<div class="c-table__value">
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value">02:40</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value c-flight-board__value--grey">02:40</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value c-flight-board__value--light-grey">Ожидается</span>
+												</div>
+												<div class="c-flight-board__elem c-flight-board__elem--trigger">
+													<button class="c-flight-board__trigger">
+														<svg class="c-flight-board__trigger-icon">
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="c-flight-board__item-dropdown">
+												<div class="c-flight-board__details">
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Вылет</span>
+														<span class="c-flight-board__details-text">Махачкала, <br>17.02 в 02:40 тер. A </span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Направление</span>
+														<span class="c-flight-board__details-text">Архангельск, <br>17.02 в 03:30</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Регистрация(начало)</span>
+														<span class="c-flight-board__details-text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Регистрация, окончание</span>
+														<span class="c-flight-board__details-text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Воздушное судно</span>
+														<span class="c-flight-board__details-text">B-737-700</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Статус</span>
+														<span class="c-flight-board__details-text">Отправлен в 05:30</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Посадка, завершение</span>
+														<span class="c-flight-board__details-text">05:10</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="c-flight-board__item">
+											<div class="c-flight-board__item-main">
+												<div class="c-flight-board__elem">
+													<div class="c-flight-board__value">
 														<div class="c-board-info">
 															<a href="flight.html" class="c-board-info__link">U6-9664</a>
 															<div class="c-board-info__dropdown">
@@ -1106,33 +1150,74 @@
 															</div>
 														</div>
 													</div>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">
-														<picture class="c-table__icon-wrap">
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value c-flight-board__value--grey">
+														<picture class="c-flight-board__icon-wrap">
 															<img src="img/icon-a.svg" alt="Icon">
 														</picture>
 														<span>UVT Aero</span>
 													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value">
 														<b>Казань</b>
 													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--light-grey">Ожидается</span>
-												</td>
-											</tr>
-											<tr class="c-table__row">
-												<td class="c-table__elem">
-													<div class="c-table__value">
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value">02:40</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value c-flight-board__value--grey">02:40</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value c-flight-board__value--light-grey">Ожидается</span>
+												</div>
+												<div class="c-flight-board__elem c-flight-board__elem--trigger">
+													<button class="c-flight-board__trigger">
+														<svg class="c-flight-board__trigger-icon">
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="c-flight-board__item-dropdown">
+												<div class="c-flight-board__details">
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Вылет</span>
+														<span class="c-flight-board__details-text">Махачкала, <br>17.02 в 02:40 тер. A </span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Направление</span>
+														<span class="c-flight-board__details-text">Архангельск, <br>17.02 в 03:30</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Регистрация(начало)</span>
+														<span class="c-flight-board__details-text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Регистрация, окончание</span>
+														<span class="c-flight-board__details-text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Воздушное судно</span>
+														<span class="c-flight-board__details-text">B-737-700</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Статус</span>
+														<span class="c-flight-board__details-text">Отправлен в 05:30</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Посадка, завершение</span>
+														<span class="c-flight-board__details-text">05:10</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="c-flight-board__item">
+											<div class="c-flight-board__item-main">
+												<div class="c-flight-board__elem">
+													<div class="c-flight-board__value">
 														<div class="c-board-info">
 															<a href="flight.html" class="c-board-info__link">U6-9664</a>
 															<div class="c-board-info__dropdown">
@@ -1169,348 +1254,604 @@
 															</div>
 														</div>
 													</div>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">
-														<picture class="c-table__icon-wrap">
-															<img src="img/icon-r.svg" alt="Icon">
-														</picture>
-														<span>UVT Aero</span>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">
-														<b>Магадан</b>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">Отправлен</span>
-												</td>
-											</tr>
-											<tr class="c-table__row">
-												<td class="c-table__elem">
-													<div class="c-table__value">
-														<div class="c-board-info">
-															<a href="flight.html" class="c-board-info__link">U6-9664</a>
-															<div class="c-board-info__dropdown">
-																<div class="c-board-info__wrapper">
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Вылет</h3>
-																		<p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Направление</h3>
-																		<p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация(начало)</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация, окончание</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Воздушное судно</h3>
-																		<p class="c-board-info__text">B-737-700</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Статус</h3>
-																		<p class="c-board-info__text">Отправлен в 05:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Посадка, завершение</h3>
-																		<p class="c-board-info__text">05:10</p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">
-														<picture class="c-table__icon-wrap">
-															<img src="img/icon-f.svg" alt="Icon">
-														</picture>
-														<span>UVT Aero</span>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">
-														<b>Магадан</b>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--orange">Задержан</span>
-												</td>
-											</tr>
-											<tr class="c-table__row">
-												<td class="c-table__elem">
-													<div class="c-table__value">
-														<div class="c-board-info">
-															<a href="flight.html" class="c-board-info__link">U6-9664</a>
-															<div class="c-board-info__dropdown">
-																<div class="c-board-info__wrapper">
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Вылет</h3>
-																		<p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Направление</h3>
-																		<p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация(начало)</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация, окончание</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Воздушное судно</h3>
-																		<p class="c-board-info__text">B-737-700</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Статус</h3>
-																		<p class="c-board-info__text">Отправлен в 05:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Посадка, завершение</h3>
-																		<p class="c-board-info__text">05:10</p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">
-														<picture class="c-table__icon-wrap">
-															<img src="img/icon-f.svg" alt="Icon">
-														</picture>
-														<span>UVT Aero</span>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">
-														<b>Магадан</b>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--red">Отменен</span>
-												</td>
-											</tr>
-											<tr class="c-table__row">
-												<td class="c-table__elem">
-													<div class="c-table__value">
-														<div class="c-board-info">
-															<a href="flight.html" class="c-board-info__link">U6-9664</a>
-															<div class="c-board-info__dropdown">
-																<div class="c-board-info__wrapper">
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Вылет</h3>
-																		<p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Направление</h3>
-																		<p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация(начало)</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация, окончание</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Воздушное судно</h3>
-																		<p class="c-board-info__text">B-737-700</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Статус</h3>
-																		<p class="c-board-info__text">Отправлен в 05:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Посадка, завершение</h3>
-																		<p class="c-board-info__text">05:10</p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">
-														<picture class="c-table__icon-wrap">
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value c-flight-board__value--grey">
+														<picture class="c-flight-board__icon-wrap">
 															<img src="img/icon-a.svg" alt="Icon">
 														</picture>
 														<span>UVT Aero</span>
 													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value">
 														<b>Казань</b>
 													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--light-grey">Ожидается</span>
-												</td>
-											</tr>
-											<tr class="c-table__row">
-												<td class="c-table__elem">
-													<div class="c-table__value">
-														<div class="c-board-info">
-															<a href="flight.html" class="c-board-info__link">U6-9664</a>
-															<div class="c-board-info__dropdown">
-																<div class="c-board-info__wrapper">
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Вылет</h3>
-																		<p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Направление</h3>
-																		<p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация(начало)</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация, окончание</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Воздушное судно</h3>
-																		<p class="c-board-info__text">B-737-700</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Статус</h3>
-																		<p class="c-board-info__text">Отправлен в 05:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Посадка, завершение</h3>
-																		<p class="c-board-info__text">05:10</p>
-																	</div>
-																</div>
-															</div>
-														</div>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value">02:40</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value c-flight-board__value--grey">02:40</span>
+												</div>
+												<div class="c-flight-board__elem">
+													<span class="c-flight-board__value c-flight-board__value--light-grey">Ожидается</span>
+												</div>
+												<div class="c-flight-board__elem c-flight-board__elem--trigger">
+													<button class="c-flight-board__trigger">
+														<svg class="c-flight-board__trigger-icon">
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="c-flight-board__item-dropdown">
+												<div class="c-flight-board__details">
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Вылет</span>
+														<span class="c-flight-board__details-text">Махачкала, <br>17.02 в 02:40 тер. A </span>
 													</div>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">
-														<picture class="c-table__icon-wrap">
-															<img src="img/icon-a.svg" alt="Icon">
-														</picture>
-														<span>UVT Aero</span>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">
-														<b>Казань</b>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--light-grey">Ожидается</span>
-												</td>
-											</tr>
-											<tr class="c-table__row">
-												<td class="c-table__elem">
-													<div class="c-table__value">
-														<div class="c-board-info">
-															<a href="flight.html" class="c-board-info__link">U6-9664</a>
-															<div class="c-board-info__dropdown">
-																<div class="c-board-info__wrapper">
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Вылет</h3>
-																		<p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Направление</h3>
-																		<p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация(начало)</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Регистрация, окончание</h3>
-																		<p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Воздушное судно</h3>
-																		<p class="c-board-info__text">B-737-700</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Статус</h3>
-																		<p class="c-board-info__text">Отправлен в 05:30</p>
-																	</div>
-																	<div class="c-board-info__item">
-																		<h3 class="c-board-info__title">Посадка, завершение</h3>
-																		<p class="c-board-info__text">05:10</p>
-																	</div>
-																</div>
-															</div>
-														</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Направление</span>
+														<span class="c-flight-board__details-text">Архангельск, <br>17.02 в 03:30</span>
 													</div>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">
-														<picture class="c-table__icon-wrap">
-															<img src="img/icon-a.svg" alt="Icon">
-														</picture>
-														<span>UVT Aero</span>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">
-														<b>Казань</b>
-													</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--grey">02:40</span>
-												</td>
-												<td class="c-table__elem">
-													<span class="c-table__value c-table__value--light-grey">Ожидается</span>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Регистрация(начало)</span>
+														<span class="c-flight-board__details-text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Регистрация, окончание</span>
+														<span class="c-flight-board__details-text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Воздушное судно</span>
+														<span class="c-flight-board__details-text">B-737-700</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Статус</span>
+														<span class="c-flight-board__details-text">Отправлен в 05:30</span>
+													</div>
+													<div class="c-flight-board__details-item">
+														<span class="c-flight-board__details-title">Посадка, завершение</span>
+														<span class="c-flight-board__details-text">05:10</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
+								<!-- <div class="flight-board__table c-table">
+                                    <table class="c-table__table">
+                                        <thead class="c-table__head">
+                                            <tr class="c-table__row">
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__heading">Рейс</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__heading">Авиакомпания</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__heading">Направление</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__heading">Время вылета</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__heading">Ожидаемое время</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__heading">Статус</span>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="c-table__body">
+                                            <tr class="c-table__row">
+                                                <td class="c-table__elem">
+                                                    <div class="c-table__value">
+                                                        <div class="c-board-info">
+                                                            <a href="flight.html" class="c-board-info__link">U6-9664</a>
+                                                            <div class="c-board-info__dropdown">
+                                                                <div class="c-board-info__wrapper">
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Вылет</h3>
+                                                                        <p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Направление</h3>
+                                                                        <p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация(начало)</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация, окончание</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Воздушное судно</h3>
+                                                                        <p class="c-board-info__text">B-737-700</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Статус</h3>
+                                                                        <p class="c-board-info__text">Отправлен в 05:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Посадка, завершение</h3>
+                                                                        <p class="c-board-info__text">05:10</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">
+                                                        <picture class="c-table__icon-wrap">
+                                                            <img src="img/icon-a.svg" alt="Icon">
+                                                        </picture>
+                                                        <span>UVT Aero</span>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">
+                                                        <b>Казань</b>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--light-grey">Ожидается</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="c-table__row">
+                                                <td class="c-table__elem">
+                                                    <div class="c-table__value">
+                                                        <div class="c-board-info">
+                                                            <a href="flight.html" class="c-board-info__link">U6-9664</a>
+                                                            <div class="c-board-info__dropdown">
+                                                                <div class="c-board-info__wrapper">
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Вылет</h3>
+                                                                        <p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Направление</h3>
+                                                                        <p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация(начало)</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация, окончание</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Воздушное судно</h3>
+                                                                        <p class="c-board-info__text">B-737-700</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Статус</h3>
+                                                                        <p class="c-board-info__text">Отправлен в 05:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Посадка, завершение</h3>
+                                                                        <p class="c-board-info__text">05:10</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">
+                                                        <picture class="c-table__icon-wrap">
+                                                            <img src="img/icon-a.svg" alt="Icon">
+                                                        </picture>
+                                                        <span>UVT Aero</span>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">
+                                                        <b>Казань</b>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--light-grey">Ожидается</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="c-table__row">
+                                                <td class="c-table__elem">
+                                                    <div class="c-table__value">
+                                                        <div class="c-board-info">
+                                                            <a href="flight.html" class="c-board-info__link">U6-9664</a>
+                                                            <div class="c-board-info__dropdown">
+                                                                <div class="c-board-info__wrapper">
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Вылет</h3>
+                                                                        <p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Направление</h3>
+                                                                        <p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация(начало)</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация, окончание</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Воздушное судно</h3>
+                                                                        <p class="c-board-info__text">B-737-700</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Статус</h3>
+                                                                        <p class="c-board-info__text">Отправлен в 05:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Посадка, завершение</h3>
+                                                                        <p class="c-board-info__text">05:10</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">
+                                                        <picture class="c-table__icon-wrap">
+                                                            <img src="img/icon-r.svg" alt="Icon">
+                                                        </picture>
+                                                        <span>UVT Aero</span>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">
+                                                        <b>Магадан</b>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">Отправлен</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="c-table__row">
+                                                <td class="c-table__elem">
+                                                    <div class="c-table__value">
+                                                        <div class="c-board-info">
+                                                            <a href="flight.html" class="c-board-info__link">U6-9664</a>
+                                                            <div class="c-board-info__dropdown">
+                                                                <div class="c-board-info__wrapper">
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Вылет</h3>
+                                                                        <p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Направление</h3>
+                                                                        <p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация(начало)</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация, окончание</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Воздушное судно</h3>
+                                                                        <p class="c-board-info__text">B-737-700</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Статус</h3>
+                                                                        <p class="c-board-info__text">Отправлен в 05:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Посадка, завершение</h3>
+                                                                        <p class="c-board-info__text">05:10</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">
+                                                        <picture class="c-table__icon-wrap">
+                                                            <img src="img/icon-f.svg" alt="Icon">
+                                                        </picture>
+                                                        <span>UVT Aero</span>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">
+                                                        <b>Магадан</b>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--orange">Задержан</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="c-table__row">
+                                                <td class="c-table__elem">
+                                                    <div class="c-table__value">
+                                                        <div class="c-board-info">
+                                                            <a href="flight.html" class="c-board-info__link">U6-9664</a>
+                                                            <div class="c-board-info__dropdown">
+                                                                <div class="c-board-info__wrapper">
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Вылет</h3>
+                                                                        <p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Направление</h3>
+                                                                        <p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация(начало)</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация, окончание</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Воздушное судно</h3>
+                                                                        <p class="c-board-info__text">B-737-700</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Статус</h3>
+                                                                        <p class="c-board-info__text">Отправлен в 05:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Посадка, завершение</h3>
+                                                                        <p class="c-board-info__text">05:10</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">
+                                                        <picture class="c-table__icon-wrap">
+                                                            <img src="img/icon-f.svg" alt="Icon">
+                                                        </picture>
+                                                        <span>UVT Aero</span>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">
+                                                        <b>Магадан</b>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--red">Отменен</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="c-table__row">
+                                                <td class="c-table__elem">
+                                                    <div class="c-table__value">
+                                                        <div class="c-board-info">
+                                                            <a href="flight.html" class="c-board-info__link">U6-9664</a>
+                                                            <div class="c-board-info__dropdown">
+                                                                <div class="c-board-info__wrapper">
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Вылет</h3>
+                                                                        <p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Направление</h3>
+                                                                        <p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация(начало)</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация, окончание</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Воздушное судно</h3>
+                                                                        <p class="c-board-info__text">B-737-700</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Статус</h3>
+                                                                        <p class="c-board-info__text">Отправлен в 05:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Посадка, завершение</h3>
+                                                                        <p class="c-board-info__text">05:10</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">
+                                                        <picture class="c-table__icon-wrap">
+                                                            <img src="img/icon-a.svg" alt="Icon">
+                                                        </picture>
+                                                        <span>UVT Aero</span>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">
+                                                        <b>Казань</b>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--light-grey">Ожидается</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="c-table__row">
+                                                <td class="c-table__elem">
+                                                    <div class="c-table__value">
+                                                        <div class="c-board-info">
+                                                            <a href="flight.html" class="c-board-info__link">U6-9664</a>
+                                                            <div class="c-board-info__dropdown">
+                                                                <div class="c-board-info__wrapper">
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Вылет</h3>
+                                                                        <p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Направление</h3>
+                                                                        <p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация(начало)</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация, окончание</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Воздушное судно</h3>
+                                                                        <p class="c-board-info__text">B-737-700</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Статус</h3>
+                                                                        <p class="c-board-info__text">Отправлен в 05:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Посадка, завершение</h3>
+                                                                        <p class="c-board-info__text">05:10</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">
+                                                        <picture class="c-table__icon-wrap">
+                                                            <img src="img/icon-a.svg" alt="Icon">
+                                                        </picture>
+                                                        <span>UVT Aero</span>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">
+                                                        <b>Казань</b>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--light-grey">Ожидается</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="c-table__row">
+                                                <td class="c-table__elem">
+                                                    <div class="c-table__value">
+                                                        <div class="c-board-info">
+                                                            <a href="flight.html" class="c-board-info__link">U6-9664</a>
+                                                            <div class="c-board-info__dropdown">
+                                                                <div class="c-board-info__wrapper">
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Вылет</h3>
+                                                                        <p class="c-board-info__text">Махачкала, <br>17.02 в 02:40 тер. A </p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Направление</h3>
+                                                                        <p class="c-board-info__text">Архангельск, <br>17.02 в 03:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация(начало)</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Регистрация, окончание</h3>
+                                                                        <p class="c-board-info__text">16.02 23:00 (план) — <br>17.02 23:00 (факт)</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Воздушное судно</h3>
+                                                                        <p class="c-board-info__text">B-737-700</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Статус</h3>
+                                                                        <p class="c-board-info__text">Отправлен в 05:30</p>
+                                                                    </div>
+                                                                    <div class="c-board-info__item">
+                                                                        <h3 class="c-board-info__title">Посадка, завершение</h3>
+                                                                        <p class="c-board-info__text">05:10</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">
+                                                        <picture class="c-table__icon-wrap">
+                                                            <img src="img/icon-a.svg" alt="Icon">
+                                                        </picture>
+                                                        <span>UVT Aero</span>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">
+                                                        <b>Казань</b>
+                                                    </span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--grey">02:40</span>
+                                                </td>
+                                                <td class="c-table__elem">
+                                                    <span class="c-table__value c-table__value--light-grey">Ожидается</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> -->
 								<div class="flight-board__mobile-table c-board-list">
 									<div class="c-board-list__wrapper">
 										<div class="c-board-list__item">
