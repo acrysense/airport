@@ -58,7 +58,7 @@
 								<span class="switch__title switch__title--right">Партнерам</span>
 							</div>
 						</label>
-						<a href="#" class="c-location header__location">
+						<a href="#" class="c-location header__location modal-btn" data-id="modal-route">
 							<svg class="c-location__icon">
 								<use xlink:href="img/sprite.svg#icon-location"></use>
 							</svg>
@@ -103,243 +103,275 @@
 				</div>
 			</div>
 			<div class="menu__main">
-				<div class="menu__wrapper">
-					<a href="#" class="c-location menu__location menu__location--mobile">
-						<svg class="c-location__icon">
-							<use xlink:href="img/sprite.svg#icon-location"></use>
-						</svg>
-						<span>Как добраться</span>
-					</a>
-					<div class="c-accordeon menu__accordeon">
-						<div class="c-accordeon__item">
-							<button class="c-accordeon__trigger">Пассажирам</button>
-							<div class="c-accordeon__wrapper">
-								<nav class="menu-nav">
-									<ul class="menu-nav__list">
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="0">Табло рейсов</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="1">Схема аэропорта</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="2">Услуги</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="3">Об аэропорте</a>
-										</li>
-									</ul>
-									<div class="menu-nav__sub">
-										<ul class="menu-nav__submenu">
+				<div class="menu__holder is--active" data-menu-holder="main">
+					<div class="menu__wrapper">
+						<a href="#" class="c-location menu__location menu__location--mobile">
+							<svg class="c-location__icon">
+								<use xlink:href="img/sprite.svg#icon-location"></use>
+							</svg>
+							<span>Как добраться</span>
+						</a>
+						<div class="c-accordeon menu__accordeon">
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">Пассажирам</button>
+								<div class="c-accordeon__wrapper">
+									<nav class="menu-nav">
+										<ul class="menu-nav__list">
 											<li class="menu-nav__item">
-												<a href="flight-board.html" class="menu-nav__sublink">Онлайн-табло</a>
+												<a href="#" class="menu-nav__link" data-submenu-id="0">Табло рейсов</a>
 											</li>
 											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Расписание</a>
+												<a href="#" class="menu-nav__link" data-submenu-id="1">Схема аэропорта</a>
 											</li>
 											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Авиакомпании</a>
+												<a href="#" class="menu-nav__link" data-submenu-id="2">Услуги</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__link" data-submenu-id="3">Об аэропорте</a>
 											</li>
 										</ul>
-										<ul class="menu-nav__submenu">
+										<div class="menu-nav__sub">
+											<ul class="menu-nav__submenu">
+												<li class="menu-nav__item">
+													<a href="flight-board.html" class="menu-nav__sublink">Онлайн-табло</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Расписание</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Авиакомпании</a>
+												</li>
+											</ul>
+											<ul class="menu-nav__submenu">
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Терминал А</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Терминал Б</a>
+												</li>
+											</ul>
+											<ul class="menu-nav__submenu">
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">VIP-залы</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Парковка</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Такси</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Автопрокат</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Гостиница</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Еда и напитки</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Магазины</a>
+												</li>
+											</ul>
+											<ul class="menu-nav__submenu">
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">История</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Стратегия развития</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Вакансии</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Руководство</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Обратная связь</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Контакты</a>
+												</li>
+											</ul>
+										</div>
+									</nav>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">Партнерам</button>
+								<div class="c-accordeon__wrapper">
+									<nav class="menu-nav">
+										<ul class="menu-nav__list">
 											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Терминал А</a>
+												<a href="#" class="menu-nav__link" data-submenu-id="0">Авиакомпаниям</a>
 											</li>
 											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Терминал Б</a>
+												<a href="#" class="menu-nav__link" data-submenu-id="1">Аренда</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__link" data-submenu-id="2">Реклама</a>
+											</li>
+											<li class="menu-nav__item">
+												<a href="#" class="menu-nav__link" data-submenu-id="3">Грузовой склад</a>
 											</li>
 										</ul>
-										<ul class="menu-nav__submenu">
+										<div class="menu-nav__sub">
+											<ul class="menu-nav__submenu" data-submenu-id="0">
+												<li class="menu-nav__item">
+													<a href="flight-board.html" class="menu-nav__sublink">Онлайн-табло</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Расписание</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Авиакомпании</a>
+												</li>
+											</ul>
+											<ul class="menu-nav__submenu" data-submenu-id="1">
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Терминал А</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Терминал Б</a>
+												</li>
+											</ul>
+											<ul class="menu-nav__submenu" data-submenu-id="2">
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">VIP-залы</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Парковка</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Такси</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Автопрокат</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Гостиница</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Еда и напитки</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Магазины</a>
+												</li>
+											</ul>
+											<ul class="menu-nav__submenu" data-submenu-id="3">
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">История</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Стратегия развития</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Вакансии</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Руководство</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Обратная связь</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Контакты</a>
+												</li>
+											</ul>
+										</div>
+									</nav>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">Раскрытие информации</button>
+								<div class="c-accordeon__wrapper">
+									<nav class="menu-nav">
+										<ul class="menu-nav__list">
 											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">VIP-залы</a>
+												<a href="#" class="menu-nav__link" data-submenu-id="0">Пункт 1</a>
 											</li>
 											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Парковка</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Такси</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Автопрокат</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Гостиница</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Еда и напитки</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Магазины</a>
+												<a href="#" class="menu-nav__link" data-submenu-id="1">Пункт 2</a>
 											</li>
 										</ul>
-										<ul class="menu-nav__submenu">
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">История</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Стратегия развития</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Вакансии</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Руководство</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Обратная связь</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Контакты</a>
-											</li>
-										</ul>
-									</div>
-								</nav>
+										<div class="menu-nav__sub">
+											<ul class="menu-nav__submenu">
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Подпункт 1</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Подпункт 2</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Подпункт 3</a>
+												</li>
+											</ul>
+											<ul class="menu-nav__submenu">
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Подпункт 1</a>
+												</li>
+												<li class="menu-nav__item">
+													<a href="#" class="menu-nav__sublink">Подпункт 2</a>
+												</li>
+											</ul>
+										</div>
+									</nav>
+								</div>
 							</div>
 						</div>
-						<div class="c-accordeon__item">
-							<button class="c-accordeon__trigger">Партнерам</button>
-							<div class="c-accordeon__wrapper">
-								<nav class="menu-nav">
-									<ul class="menu-nav__list">
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="0">Авиакомпаниям</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="1">Аренда</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="2">Реклама</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="3">Грузовой склад</a>
-										</li>
-									</ul>
-									<div class="menu-nav__sub">
-										<ul class="menu-nav__submenu" data-submenu-id="0">
-											<li class="menu-nav__item">
-												<a href="flight-board.html" class="menu-nav__sublink">Онлайн-табло</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Расписание</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Авиакомпании</a>
-											</li>
-										</ul>
-										<ul class="menu-nav__submenu" data-submenu-id="1">
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Терминал А</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Терминал Б</a>
-											</li>
-										</ul>
-										<ul class="menu-nav__submenu" data-submenu-id="2">
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">VIP-залы</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Парковка</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Такси</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Автопрокат</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Гостиница</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Еда и напитки</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Магазины</a>
-											</li>
-										</ul>
-										<ul class="menu-nav__submenu" data-submenu-id="3">
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">История</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Стратегия развития</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Вакансии</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Руководство</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Обратная связь</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Контакты</a>
-											</li>
-										</ul>
-									</div>
-								</nav>
-							</div>
+					</div>
+					<div class="menu__wrapper">
+						<div class="menu__block menu__block--mobile">
+							<a href="tel:+78722555500" class="menu__phone">+7 (8722) 55-55-00</a>
+							<span class="menu__help">Справочная служба аэропорта</span>
 						</div>
-						<div class="c-accordeon__item">
-							<button class="c-accordeon__trigger">Раскрытие информации</button>
-							<div class="c-accordeon__wrapper">
-								<nav class="menu-nav">
-									<ul class="menu-nav__list">
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="0">Пункт 1</a>
-										</li>
-										<li class="menu-nav__item">
-											<a href="#" class="menu-nav__link" data-submenu-id="1">Пункт 2</a>
-										</li>
-									</ul>
-									<div class="menu-nav__sub">
-										<ul class="menu-nav__submenu">
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Подпункт 1</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Подпункт 2</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Подпункт 3</a>
-											</li>
-										</ul>
-										<ul class="menu-nav__submenu">
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Подпункт 1</a>
-											</li>
-											<li class="menu-nav__item">
-												<a href="#" class="menu-nav__sublink">Подпункт 2</a>
-											</li>
-										</ul>
-									</div>
-								</nav>
-							</div>
+						<div class="menu__block">
+							<p class="menu__copyright">© 2022 Международный Аэропорт«Махачкала»</p>
+							<a href="#" class="c-visually-impaired menu__visually-impaired menu__visually-impaired--mobile">
+								<svg class="c-visually-impaired__icon">
+									<use xlink:href="img/sprite.svg#icon-eye"></use>
+								</svg>
+								<span>Версия для слабовидящих</span>
+							</a>
+							<ul class="c-language-list menu__language">
+								<li class="c-language-list__item c-language-list__item--active">
+									<button class="c-language-list__value">RU</button>
+								</li>
+								<li class="c-language-list__item">
+									<button class="c-language-list__value">EN</button>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="menu__wrapper">
-					<div class="menu__block menu__block--mobile">
-						<a href="tel:+78722555500" class="menu__phone">+7 (8722) 55-55-00</a>
-						<span class="menu__help">Справочная служба аэропорта</span>
-					</div>
-					<div class="menu__block">
-						<p class="menu__copyright">© 2022 Международный Аэропорт«Махачкала»</p>
-						<a href="#" class="c-visually-impaired menu__visually-impaired menu__visually-impaired--mobile">
-							<svg class="c-visually-impaired__icon">
-								<use xlink:href="img/sprite.svg#icon-eye"></use>
-							</svg>
-							<span>Версия для слабовидящих</span>
-						</a>
-						<ul class="c-language-list menu__language">
-							<li class="c-language-list__item c-language-list__item--active">
-								<button class="c-language-list__value">RU</button>
-							</li>
-							<li class="c-language-list__item">
-								<button class="c-language-list__value">EN</button>
-							</li>
-						</ul>
+				<div class="menu__holder" data-menu-holder="route">
+					<div class="route menu__route">
+						<h3 class="route__title">Как добраться?</h3>
+						<div class="route__controls">
+							<div class="route__checkboxes">
+								<label for="rect-checkbox-modal-01" class="rect-checkbox route__checkbox">
+									<input type="radio" id="rect-checkbox-modal-01" class="rect-checkbox__input" name="route-modal" checked>
+									<div class="rect-checkbox__group">
+										<span class="rect-checkbox__title">В аэропорт</span>
+									</div>
+								</label>
+								<label for="rect-checkbox-modal-02" class="rect-checkbox route__checkbox">
+									<input type="radio" id="rect-checkbox-modal-02" class="rect-checkbox__input" name="route-modal">
+									<div class="rect-checkbox__group">
+										<span class="rect-checkbox__title">Из аэропорта</span>
+									</div>
+								</label>
+							</div>
+							<div class="c-my-location route__location">
+								<svg class="c-my-location__icon">
+									<use xlink:href="img/sprite.svg#icon-my-location"></use>
+								</svg>
+								<input type="text" class="c-my-location__input" placeholder="Откуда">
+							</div>
+						</div>
+						<div class="route__map">
+							<!-- iframe -->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -898,6 +930,48 @@
 							<button class="feedback-form__btn btn">Отправить сообщение</button>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<div class="modal" id="modal-route">
+		<div class="modal__scroll">
+			<div class="modal__wrap">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close-square"></use>
+					</svg>
+				</button>
+				<div class="modal__wrapper">
+					<h3 class="modal__heading">Как добраться?</h3>
+					<div class="route modal__route">
+						<div class="route__map">
+							<!-- iframe -->
+						</div>
+						<div class="route__controls">
+							<div class="c-my-location route__location">
+								<svg class="c-my-location__icon">
+									<use xlink:href="img/sprite.svg#icon-my-location"></use>
+								</svg>
+								<input type="text" class="c-my-location__input" placeholder="Откуда">
+							</div>
+							<div class="route__checkboxes">
+								<label for="rect-checkbox-01" class="rect-checkbox route__checkbox">
+									<input type="radio" id="rect-checkbox-01" class="rect-checkbox__input" name="route" checked>
+									<div class="rect-checkbox__group">
+										<span class="rect-checkbox__title">В аэропорт</span>
+									</div>
+								</label>
+								<label for="rect-checkbox-02" class="rect-checkbox route__checkbox">
+									<input type="radio" id="rect-checkbox-02" class="rect-checkbox__input" name="route">
+									<div class="rect-checkbox__group">
+										<span class="rect-checkbox__title">Из аэропорта</span>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
