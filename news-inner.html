@@ -34,27 +34,35 @@
 		}
 
 		.loader.is--hidden {
-			-webkit-animation: loaderHidden 0.35s ease-in-out forwards 0.35s;
-			animation: loaderHidden 0.35s ease-in-out forwards 0.35s;
+			-webkit-animation: loaderHidden 0.35s ease-in-out forwards 0.8s;
+			animation: loaderHidden 0.35s ease-in-out forwards 0.8s;
 		}
 
 		.loader.is--hidden .loader__icon {
-			-webkit-animation: loaderIconHidden 0.55s ease-in-out forwards;
-			animation: loaderIconHidden 0.55s ease-in-out forwards;
+			-webkit-animation: loaderIconHidden 0.55s ease-in-out forwards 0.35s;
+			animation: loaderIconHidden 0.55s ease-in-out forwards 0.35s;
+		}
+
+		.loader.is--hidden .loader__line {
+			-webkit-animation: loaderLine 0.25s ease-in-out forwards;
+			animation: loaderLine 0.25s ease-in-out forwards;
+		}
+
+		.loader.is--hidden .loader__main {
+			animation-play-state: paused;
+			animation-iteration-count: 1;
 		}
 
 		.loader__line {
 			opacity: 0;
-			-webkit-animation: loaderLine 0.25s ease-in-out forwards 2.25s;
-			animation: loaderLine 0.25s ease-in-out forwards 2.25s;
 		}
 
 		.loader__main {
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
 			transform: translateY(0);
-			-webkit-animation: loaderMain 2s ease-in-out forwards 0.25s;
-			animation: loaderMain 2s ease-in-out forwards 0.25s;
+			-webkit-animation: loaderMain 2s ease-in-out forwards infinite 0.25s;
+			animation: loaderMain 2s ease-in-out forwards infinite 0.25s;
 		}
 
 		@-webkit-keyframes loaderHidden {
