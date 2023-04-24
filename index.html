@@ -11,11 +11,192 @@
 	<meta property="og:url" content="/">
 	<meta property="og:site_name" content="МАХАЧКАЛА - Международный аэропорт">
 	<!-- styles -->
+	<style>
+		.loader {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 10000;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			width: 100%;
+			height: 100vh;
+			background: #FFFFFF;
+		}
+
+		.loader.is--hidden {
+			-webkit-animation: loaderHidden 0.35s ease-in-out forwards 0.35s;
+			animation: loaderHidden 0.35s ease-in-out forwards 0.35s;
+		}
+
+		.loader.is--hidden .loader__icon {
+			-webkit-animation: loaderIconHidden 0.55s ease-in-out forwards;
+			animation: loaderIconHidden 0.55s ease-in-out forwards;
+		}
+
+		.loader__line {
+			opacity: 0;
+			-webkit-animation: loaderLine 0.25s ease-in-out forwards 2.25s;
+			animation: loaderLine 0.25s ease-in-out forwards 2.25s;
+		}
+
+		.loader__main {
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0);
+			-webkit-animation: loaderMain 2s ease-in-out forwards 0.25s;
+			animation: loaderMain 2s ease-in-out forwards 0.25s;
+		}
+
+		@-webkit-keyframes loaderHidden {
+			0% {
+				visibility: visible;
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			100% {
+				visibility: hidden;
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+
+		@keyframes loaderHidden {
+			0% {
+				visibility: visible;
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			100% {
+				visibility: hidden;
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+
+		@-webkit-keyframes loaderIconHidden {
+			0% {
+				opacity: 1;
+				transform: rotate(0) scale(1);
+			}
+
+			100% {
+				opacity: 0;
+				transform: rotate(450deg) scale(0);
+			}
+		}
+
+		@keyframes loaderIconHidden {
+			0% {
+				opacity: 1;
+				transform: rotate(0) scale(1);
+			}
+
+			100% {
+				opacity: 0;
+				transform: rotate(450deg) scale(0);
+			}
+		}
+
+		@-webkit-keyframes loaderLine {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes loaderLine {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@-webkit-keyframes loaderMain {
+			0% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			25% {
+				-webkit-transform: translateY(36px);
+				transform: translateY(36px);
+			}
+
+			50% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			75% {
+				-webkit-transform: translateY(36px);
+				transform: translateY(36px);
+			}
+
+			100% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes loaderMain {
+			0% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			25% {
+				-webkit-transform: translateY(36px);
+				transform: translateY(36px);
+			}
+
+			50% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			75% {
+				-webkit-transform: translateY(36px);
+				transform: translateY(36px);
+			}
+
+			100% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+	</style>
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
+	<!-- loader -->
+	<div class="loader" id="loader">
+		<svg class="loader__icon" width="92" height="93" viewBox="0 0 92 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path class="loader__line" d="M92.0003 28.2109H69.6748V92.8093H92.0003V28.2109Z" fill="#4E106F" />
+			<path class="loader__line" d="M22.3255 28.2109H0V92.8093H22.3255V28.2109Z" fill="#4E106F" />
+			<path class="loader__main" d="M45.9998 57.8476L91.9997 28.2103V0C91.9997 0 61.3882 21.1028 50.1016 28.3475C49.4684 28.7591 48.8077 29.2257 48.2021 29.6647C47.4004 30.135 46.78 30.8597 46.4403 31.7229H45.5869C45.242 30.8543 44.611 30.1285 43.7976 29.6647C43.2195 29.2257 42.5588 28.7591 41.8981 28.3475C30.639 21.1028 0 0 0 0V28.2103L45.9998 57.8476Z" fill="#E8145A" />
+		</svg>
+	</div>
+	<!-- end of loader -->
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
@@ -1199,6 +1380,11 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script>
+		setTimeout(() => {
+			document.getElementById('loader').classList.add('is--hidden')
+		}, 2500)
+	</script>
 </body>
 
 </html>

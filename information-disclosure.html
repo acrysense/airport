@@ -11,6 +11,178 @@
 	<meta property="og:url" content="/">
 	<meta property="og:site_name" content="МАХАЧКАЛА - Международный аэропорт">
 	<!-- styles -->
+	<style>
+		.loader {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 10000;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			width: 100%;
+			height: 100vh;
+			background: #FFFFFF;
+		}
+
+		.loader.is--hidden {
+			-webkit-animation: loaderHidden 0.35s ease-in-out forwards 0.35s;
+			animation: loaderHidden 0.35s ease-in-out forwards 0.35s;
+		}
+
+		.loader.is--hidden .loader__icon {
+			-webkit-animation: loaderIconHidden 0.55s ease-in-out forwards;
+			animation: loaderIconHidden 0.55s ease-in-out forwards;
+		}
+
+		.loader__line {
+			opacity: 0;
+			-webkit-animation: loaderLine 0.25s ease-in-out forwards 2.25s;
+			animation: loaderLine 0.25s ease-in-out forwards 2.25s;
+		}
+
+		.loader__main {
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0);
+			-webkit-animation: loaderMain 2s ease-in-out forwards 0.25s;
+			animation: loaderMain 2s ease-in-out forwards 0.25s;
+		}
+
+		@-webkit-keyframes loaderHidden {
+			0% {
+				visibility: visible;
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			100% {
+				visibility: hidden;
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+
+		@keyframes loaderHidden {
+			0% {
+				visibility: visible;
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			100% {
+				visibility: hidden;
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+
+		@-webkit-keyframes loaderIconHidden {
+			0% {
+				opacity: 1;
+				transform: rotate(0) scale(1);
+			}
+
+			100% {
+				opacity: 0;
+				transform: rotate(450deg) scale(0);
+			}
+		}
+
+		@keyframes loaderIconHidden {
+			0% {
+				opacity: 1;
+				transform: rotate(0) scale(1);
+			}
+
+			100% {
+				opacity: 0;
+				transform: rotate(450deg) scale(0);
+			}
+		}
+
+		@-webkit-keyframes loaderLine {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes loaderLine {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@-webkit-keyframes loaderMain {
+			0% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			25% {
+				-webkit-transform: translateY(36px);
+				transform: translateY(36px);
+			}
+
+			50% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			75% {
+				-webkit-transform: translateY(36px);
+				transform: translateY(36px);
+			}
+
+			100% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes loaderMain {
+			0% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			25% {
+				-webkit-transform: translateY(36px);
+				transform: translateY(36px);
+			}
+
+			50% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			75% {
+				-webkit-transform: translateY(36px);
+				transform: translateY(36px);
+			}
+
+			100% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+	</style>
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
