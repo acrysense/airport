@@ -628,9 +628,10 @@
 						<div class="main__block main__block--indent">
 							<ul class="c-scoreboard main__scoreboard">
 								<li class="c-scoreboard__item">
-									<a href="#" class="c-scoreboard__link">
-										<svg class="c-scoreboard__icon">
-											<use xlink:href="img/sprite.svg#icon-departure"></use>
+									<a href="#" class="c-scoreboard__link c-scoreboard__link--departure">
+										<svg class="c-scoreboard__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M26.1784 31.0857H-5.82161V32H26.1784V31.0857Z" fill="currentColor" />
+											<path class="c-scoreboard__icon--animation" d="M-2.10961 22.0252L0.496108 24.0549C0.91222 24.3778 1.42314 24.5545 1.94982 24.5578C2.34331 24.5563 2.73009 24.4557 3.0744 24.2652L8.0024 21.6046L23.9475 12.9829C24.15 12.8567 24.3454 12.7193 24.5327 12.5715C25.8675 11.5018 26.4893 10.0572 25.9315 9.08804C25.3738 8.1189 24.103 7.98176 22.7133 8.39318C22.3458 8.4778 21.9919 8.61319 21.6618 8.79547L16.0847 12.0138L1.38297 5.51318L-1.69817 7.2869C-1.69817 7.2869 5.2504 12.3886 8.1304 14.7475C9.37383 15.7532 9.82182 15.4606 9.82182 15.4606L9.91325 15.616L2.05954 20.8823L-3.74618 17.9658L-5.82161 19.1726C-5.74847 19.1726 -3.99304 20.608 -2.16447 22.0252" fill="currentColor" />
 										</svg>
 										<div class="c-scoreboard__group">
 											<span class="c-scoreboard__title">ВЫЛЕТ</span>
@@ -639,9 +640,10 @@
 									</a>
 								</li>
 								<li class="c-scoreboard__item">
-									<a href="#" class="c-scoreboard__link">
-										<svg class="c-scoreboard__icon">
-											<use xlink:href="img/sprite.svg#icon-arrival"></use>
+									<a href="#" class="c-scoreboard__link c-scoreboard__link--arrival">
+										<svg class="c-scoreboard__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M26.1784 31.0857H-5.82161V32H26.1784V31.0857Z" fill="currentColor" />
+											<path class="c-scoreboard__icon--animation" d="M-3.48757 10.3851L-3.3675 13.6859C-3.34736 14.2122 -3.15434 14.7172 -2.81828 15.1227C-2.56425 15.4232 -2.23854 15.6548 -1.87129 15.7961L3.33448 17.861L20.1884 24.5338C20.4153 24.6078 20.6461 24.6691 20.8797 24.7176C22.5572 25.0525 24.0634 24.6002 24.4474 23.5501C24.8313 22.4999 24.1194 21.4382 22.911 20.6381C22.61 20.411 22.2788 20.2269 21.927 20.0912L15.8767 17.8875L11.4063 2.44688L8.06708 1.22672C8.06708 1.22672 8.6254 9.82895 8.66963 13.5514C8.69847 15.1504 9.21056 15.3055 9.21056 15.3055L9.15026 15.4755L0.0677902 12.8443L-1.42983 6.52209L-3.6884 5.70797C-3.64139 5.764 -3.61262 8.03141 -3.52283 10.3431" fill="currentColor" />
 										</svg>
 										<div class="c-scoreboard__group">
 											<span class="c-scoreboard__title">ПРИЛЕТ</span>
@@ -1391,7 +1393,7 @@
 	<script>
 		setTimeout(() => {
 			document.getElementById('loader').classList.add('is--hidden')
-		}, 5500)
+		}, 3500)
 	</script>
 </body>
 
