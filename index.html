@@ -292,9 +292,9 @@
 				</div>
 			</div>
 			<div class="menu__main">
-				<div class="menu__holder is--active" data-menu-holder="main">
+				<div class="menu__holder is--active">
 					<div class="menu__wrapper">
-						<a href="#" class="c-location menu__location menu__location--mobile">
+						<a href="#" class="c-location menu__location menu__location--mobile modal-btn" data-id="modal-route">
 							<svg class="c-location__icon">
 								<use xlink:href="img/sprite.svg#icon-location"></use>
 							</svg>
@@ -530,36 +530,6 @@
 									<button class="c-language-list__value">EN</button>
 								</li>
 							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="menu__holder" data-menu-holder="route">
-					<div class="route menu__route">
-						<h3 class="route__title">Как добраться?</h3>
-						<div class="route__controls">
-							<div class="route__checkboxes">
-								<label for="rect-checkbox-modal-01" class="rect-checkbox route__checkbox">
-									<input type="radio" id="rect-checkbox-modal-01" class="rect-checkbox__input" name="route-modal" checked>
-									<div class="rect-checkbox__group">
-										<span class="rect-checkbox__title">В аэропорт</span>
-									</div>
-								</label>
-								<label for="rect-checkbox-modal-02" class="rect-checkbox route__checkbox">
-									<input type="radio" id="rect-checkbox-modal-02" class="rect-checkbox__input" name="route-modal">
-									<div class="rect-checkbox__group">
-										<span class="rect-checkbox__title">Из аэропорта</span>
-									</div>
-								</label>
-							</div>
-							<div class="c-my-location route__location">
-								<svg class="c-my-location__icon">
-									<use xlink:href="img/sprite.svg#icon-my-location"></use>
-								</svg>
-								<input type="text" class="c-my-location__input" placeholder="Откуда">
-							</div>
-						</div>
-						<div class="route__map">
-							<!-- iframe -->
 						</div>
 					</div>
 				</div>
@@ -1364,9 +1334,9 @@
 								<svg class="c-my-location__icon">
 									<use xlink:href="img/sprite.svg#icon-my-location"></use>
 								</svg>
-								<input type="text" id="from-maps" class="c-my-location__input" placeholder="Откуда">
+								<input type="text" id="input-maps" class="c-my-location__input" placeholder="Откуда">
 							</div>
-							<div class="route__checkboxes">
+							<div class="route__checkboxes route__checkboxes--desktop">
 								<label for="to-aeroport" class="rect-checkbox route__checkbox">
 									<input type="radio" id="to-aeroport" class="rect-checkbox__input" name="route" checked>
 									<div class="rect-checkbox__group">
@@ -1397,8 +1367,9 @@
 			$direction = 1;
 			$address_from = '';
 
-			document.getElementById('from-maps').addEventListener('input', (event) => {
-				$address_from = document.getElementById('from-maps').value
+			document.getElementById('input-maps').addEventListener('input', (event) => {
+				$address_from = document.getElementById('input-maps').value
+
 				rute()
 			});
 
@@ -1440,8 +1411,8 @@
 			}
 
 			var myMap = new ymaps.Map('map', {
-				center: [55.753994, 37.622093],
-				zoom: 9,
+				center: [42.8267499, 47.6212311],
+				zoom: 13,
 				controls: []
 			});
 
@@ -1453,7 +1424,7 @@
 				}
 			});
 
-			// var _from = new ymaps.SuggestView('from-maps');
+			var _from = new ymaps.SuggestView('input-maps');
 
 			myMap.controls.add(routePanelControl);
 		});
