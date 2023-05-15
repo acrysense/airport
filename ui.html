@@ -1284,24 +1284,24 @@
 					<h3 class="modal__heading">Как добраться?</h3>
 					<div class="route modal__route">
 						<div class="route__map">
-							<!-- iframe -->
+							<div id="map"></div>
 						</div>
 						<div class="route__controls">
 							<div class="c-my-location route__location">
 								<svg class="c-my-location__icon">
 									<use xlink:href="img/sprite.svg#icon-my-location"></use>
 								</svg>
-								<input type="text" class="c-my-location__input" placeholder="Откуда">
+								<input type="text" id="from-maps" class="c-my-location__input" placeholder="Откуда">
 							</div>
 							<div class="route__checkboxes">
-								<label for="rect-checkbox-01" class="rect-checkbox route__checkbox">
-									<input type="radio" id="rect-checkbox-01" class="rect-checkbox__input" name="route" checked>
+								<label for="to-aeroport" class="rect-checkbox route__checkbox">
+									<input type="radio" id="to-aeroport" class="rect-checkbox__input" name="route" checked>
 									<div class="rect-checkbox__group">
 										<span class="rect-checkbox__title">В аэропорт</span>
 									</div>
 								</label>
-								<label for="rect-checkbox-02" class="rect-checkbox route__checkbox">
-									<input type="radio" id="rect-checkbox-02" class="rect-checkbox__input" name="route">
+								<label for="from-aeroport" class="rect-checkbox route__checkbox">
+									<input type="radio" id="from-aeroport" class="rect-checkbox__input" name="route">
 									<div class="rect-checkbox__group">
 										<span class="rect-checkbox__title">Из аэропорта</span>
 									</div>
@@ -1318,6 +1318,73 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=314dff44-b649-4076-a335-d204cb51faa8&lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+		ymaps.ready(function() {
+			$direction = 1;
+			$address_from = '';
+
+			document.getElementById('from-maps').addEventListener('input', (event) => {
+				$address_from = document.getElementById('from-maps').value
+				rute()
+			});
+
+			document.querySelectorAll('.route__checkbox').forEach(item => {
+				item.addEventListener('click', (event) => {
+					event.preventDefault()
+
+					const input = item.querySelector('input[type=radio]')
+
+					document.querySelectorAll('.route__checkbox input[type=radio]').forEach(child => child.checked = false)
+					input.checked = true
+
+					if (input.id === 'to-aeroport') {
+						$direction = 1;
+					} else if (input.id === 'from-aeroport') {
+						$direction = 2;
+					}
+
+					rute()
+				})
+			})
+
+			function rute() {
+				if ($direction === 1) {
+					routePanelControl.routePanel.state.set({
+						fromEnabled: true,
+						from: $address_from,
+						toEnabled: false,
+						to: "Республика Дагестан, Карабудахкентский район, аэропорт Махачкала (Уйташ), 1",
+					});
+				} else if ($direction === 2) {
+					routePanelControl.routePanel.state.set({
+						fromEnabled: false,
+						from: "Республика Дагестан, Карабудахкентский район, аэропорт Махачкала (Уйташ), 1",
+						toEnabled: true,
+						to: $address_from,
+					});
+				}
+			}
+
+			var myMap = new ymaps.Map('map', {
+				center: [55.753994, 37.622093],
+				zoom: 9,
+				controls: []
+			});
+
+			routePanelControl = new ymaps.control.RoutePanel({});
+
+			routePanelControl.routePanel.options.set({
+				types: {
+					auto: true
+				}
+			});
+
+			// var _from = new ymaps.SuggestView('from-maps');
+
+			myMap.controls.add(routePanelControl);
+		});
+	</script>
 </body>
 
 </html>
