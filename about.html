@@ -1194,16 +1194,16 @@
 	</div>
 	<!-- end of modals -->
 	<!-- scripts -->
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=314dff44-b649-4076-a335-d204cb51faa8&lang=ru_RU" type="text/javascript"></script>
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=314dff44-b649-4076-a335-d204cb51faa8&lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript">
 		ymaps.ready(function() {
 			var _from = new ymaps.SuggestView('input-maps');
 			var _current_location = '';
 
-			$direction = 1;
-			$address_from = '';
+			var $direction = 1;
+			var $address_from = '';
 
 			document.getElementById('input-maps').addEventListener('input', (event) => {
 				$address_from = document.getElementById('input-maps').value
@@ -1219,7 +1219,6 @@
 					function(result) {
 						_current_location = result.geoObjects.get(0).properties.get('text');
 
-						console.log(_current_location)
 						document.getElementById('input-maps').value = ''
 						rute()
 					},
@@ -1250,8 +1249,7 @@
 				})
 			})
 
-			_from.events.add('select', function(e) {
-				console.log('select')
+			_from.events.add('select', () => {
 				_current_location = ''
 				rute()
 			});
@@ -1274,9 +1272,7 @@
 			myMap.controls.add(routePanelControl);
 
 			function rute() {
-				console.log('rute')
 				if (_current_location === '') {
-					console.log('empty')
 					if ($direction === 1) {
 						routePanelControl.routePanel.state.set({
 							fromEnabled: true,
@@ -1293,7 +1289,6 @@
 						});
 					}
 				} else {
-					console.log('not empty')
 					if ($direction === 1) {
 						routePanelControl.routePanel.state.set({
 							fromEnabled: true,
