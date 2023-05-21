@@ -1152,9 +1152,11 @@
 						</div>
 						<div class="route__controls">
 							<div class="c-my-location route__location">
-								<svg class="c-my-location__icon">
-									<use xlink:href="img/sprite.svg#icon-my-location"></use>
-								</svg>
+								<button class="c-my-location__point" id="route-location-geo">
+									<svg class="c-my-location__point-icon">
+										<use xlink:href="img/sprite.svg#icon-my-location"></use>
+									</svg>
+								</button>
 								<input type="text" id="input-maps" class="c-my-location__input" placeholder="Откуда">
 							</div>
 							<div class="route__checkboxes route__checkboxes--desktop">
@@ -1185,6 +1187,9 @@
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=314dff44-b649-4076-a335-d204cb51faa8&lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript">
 		ymaps.ready(function() {
+			var _from = new ymaps.SuggestView('input-maps');
+			var _current_location = '';
+
 			$direction = 1;
 			$address_from = '';
 
@@ -1192,6 +1197,24 @@
 				$address_from = document.getElementById('input-maps').value
 
 				rute()
+			});
+
+			document.getElementById('route-location-geo').addEventListener('click', (event) => {
+				event.preventDefault()
+
+				var location = ymaps.geolocation.get();
+				location.then(
+					function(result) {
+						_current_location = result.geoObjects.get(0).properties.get('text');
+
+						console.log(_current_location)
+						document.getElementById('input-maps').value = ''
+						rute()
+					},
+					function(err) {
+						console.log('Ошибка: ' + err)
+					}
+				);
 			});
 
 			document.querySelectorAll('.route__checkbox').forEach(item => {
@@ -1205,31 +1228,21 @@
 
 					if (input.id === 'to-aeroport') {
 						$direction = 1;
+						document.getElementById('input-maps').placeholder = 'Откуда'
 					} else if (input.id === 'from-aeroport') {
 						$direction = 2;
+						document.getElementById('input-maps').placeholder = 'Куда'
 					}
 
 					rute()
 				})
 			})
 
-			function rute() {
-				if ($direction === 1) {
-					routePanelControl.routePanel.state.set({
-						fromEnabled: true,
-						from: $address_from,
-						toEnabled: false,
-						to: "Республика Дагестан, Карабудахкентский район, аэропорт Махачкала (Уйташ), 1",
-					});
-				} else if ($direction === 2) {
-					routePanelControl.routePanel.state.set({
-						fromEnabled: false,
-						from: "Республика Дагестан, Карабудахкентский район, аэропорт Махачкала (Уйташ), 1",
-						toEnabled: true,
-						to: $address_from,
-					});
-				}
-			}
+			_from.events.add('select', function(e) {
+				console.log('select')
+				_current_location = ''
+				rute()
+			});
 
 			var myMap = new ymaps.Map('map', {
 				center: [42.8267499, 47.6212311],
@@ -1245,9 +1258,48 @@
 				}
 			});
 
-			var _from = new ymaps.SuggestView('input-maps');
-
 			myMap.controls.add(routePanelControl);
+
+			function rute() {
+				console.log('rute')
+				if (_current_location === '') {
+					console.log('empty')
+					if ($direction === 1) {
+						routePanelControl.routePanel.state.set({
+							fromEnabled: true,
+							from: $address_from,
+							toEnabled: false,
+							to: "Республика Дагестан, Карабудахкентский район, аэропорт Махачкала (Уйташ), 1",
+						});
+					} else if ($direction === 2) {
+						routePanelControl.routePanel.state.set({
+							fromEnabled: false,
+							from: "Республика Дагестан, Карабудахкентский район, аэропорт Махачкала (Уйташ), 1",
+							toEnabled: true,
+							to: $address_from,
+						});
+					}
+				} else {
+					console.log('not empty')
+					if ($direction === 1) {
+						routePanelControl.routePanel.state.set({
+							fromEnabled: true,
+							from: _current_location,
+							toEnabled: false,
+							to: "Республика Дагестан, Карабудахкентский район, аэропорт Махачкала (Уйташ), 1",
+						});
+					} else if ($direction === 2) {
+						routePanelControl.routePanel.state.set({
+							fromEnabled: false,
+							from: "Республика Дагестан, Карабудахкентский район, аэропорт Махачкала (Уйташ), 1",
+							toEnabled: true,
+							to: _current_location,
+						});
+					}
+				}
+			}
+
+			rute()
 		});
 	</script>
 </body>
