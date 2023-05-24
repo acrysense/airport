@@ -1147,7 +1147,7 @@
 					function(result) {
 						_current_location = result.geoObjects.get(0).properties.get('text');
 
-						document.getElementById('input-maps').value = ''
+						document.getElementById('input-maps').value = _current_location
 						rute()
 					},
 					function(err) {
